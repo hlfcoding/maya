@@ -1,0 +1,1004 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fold",
+				"folder_exclude_patterns"
+			],
+			[
+				"f",
+				"for	for (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"border-",
+				"border-top"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Applications/Autodesk/maya2013/mentalray/scripts/mentalrayCustomNodeUI.mel",
+			"settings":
+			{
+				"buffer_size": 30248,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 7118 files for \"assignCreatedShader\" (case sensitive)\n\n/Applications/Autodesk/maya2013/Maya.app/Contents/scripts/startup/buildShaderMenus.mel:\n  586  	global string $gAssignNewMaterialWindowLockButton;\n  587  	string $assignNewMaterial = ((uiRes(\"m_buildShaderMenus.kAssignNewMaterialWinTitle\")) + $objsString);\n  588: 	string $postCommand = (\"assignCreatedShader %type \\\"\" + $item + \"\\\" %node \\\"\" + $objsString + \"\\\"\");\n  589  \n  590  	// Change the window title if there are no selected objects,\n\n/Applications/Autodesk/maya2013/Maya.app/Contents/scripts/startup/createAndAssignShader.mel:\n  164  } \n  165  \n  166: global proc assignCreatedShader(string $type, string $item, string $node, string $selObjs)\n  167  //\n  168  //	Assign the given shader of the given type to the given object(s).\n\n2 matches across 2 files\n\n\nSearching 7118 files for \"assignCreatedShader\" (case sensitive)\n\n/Applications/Autodesk/maya2013/Maya.app/Contents/scripts/startup/buildShaderMenus.mel:\n  586  	global string $gAssignNewMaterialWindowLockButton;\n  587  	string $assignNewMaterial = ((uiRes(\"m_buildShaderMenus.kAssignNewMaterialWinTitle\")) + $objsString);\n  588: 	string $postCommand = (\"assignCreatedShader %type \\\"\" + $item + \"\\\" %node \\\"\" + $objsString + \"\\\"\");\n  589  \n  590  	// Change the window title if there are no selected objects,\n\n/Applications/Autodesk/maya2013/Maya.app/Contents/scripts/startup/createAndAssignShader.mel:\n  164  } \n  165  \n  166: global proc assignCreatedShader(string $type, string $item, string $node, string $selObjs)\n  167  //\n  168  //	Assign the given shader of the given type to the given object(s).\n\n2 matches across 2 files\n\n\nSearching 7118 files for \"proc setAttr\" (case sensitive)\n\n/Applications/Autodesk/maya2013/Maya.app/Contents/scripts/AETemplates/AEcontainerMain.mel:\n   59  }\n   60  \n   61: proc setAttrEdIntField( string $attrEdInfo, int $childIndex, int $val )\n   62  //\n   63  //	Description:\n   ..\n  101  }\n  102  \n  103: global proc setAttrEdTextField( string $attrEdInfo, int $childIndex, string $val )\n  104  //\n  105  //	Description:\n\n/Applications/Autodesk/maya2013/Maya.app/Contents/scripts/AETemplates/AEpointEmitterTemplate.mel:\n  174  }\n  175  \n  176: global proc setAttributeDimming ( string $nodeName )\n  177  //\n  178  // Description:\n\n/Applications/Autodesk/maya2013/Maya.app/Contents/scripts/fur/FurPluginCreateUI.mel:\n 9348  //#define ATTRACTOR_PT_ON_SUBDSRF	4\n 9349  \n 9350: proc setAttractorOptionVars()\n 9351  {\n 9352  	if ( !`optionVar -exists HfAttractorWhere`) {\n\n/Applications/Autodesk/maya2013/Maya.app/Contents/scripts/others/nClothVertexEditor.mel:\n  171  }\n  172  \n  173: proc setAttrVal( float $val)\n  174  {\n  175  	string $attr = `optionMenuGrp -q -v ncveAttrOptionMenu`;\n\n/Applications/Autodesk/maya2013/Maya.app/Contents/scripts/others/performShowHideClipGhost.mel:\n   32  }\n   33  \n   34: proc setAttrState( string $attr, string $flag, int $val )\n   35  {\n   36  	string $v = $val;\n\n/Applications/Autodesk/maya2013/Maya.app/Contents/scripts/others/setAttrEnumResource.mel:\n   57  \n   58  \n   59: global proc setAttrEnumResource( string $nodeType, string $attrShortName, int $enumIndex, string $str )\n   60  {\n   61      // Key has format n_NNN.a_AA1_enum_XX\n\n/Applications/Autodesk/maya2013/Maya.app/Contents/scripts/others/setAttrNiceNameResource.mel:\n   52  //\n   53  \n   54: global proc setAttrNiceNameResource( string $nodeType, string $attrShortName, string $str )\n   55  {\n   56      // Key has format n_NNN.a_AA1_niceName\n\n/Applications/Autodesk/maya2013/Maya.app/Contents/scripts/startup/setAttributeEditorVisible.mel:\n   33  //		$visible - Visibility for the Attribute Editor.\n   34  //\n   35: global proc setAttributeEditorVisible(int $visible)\n   36  {\n   37  	int $currentlyVisible = isUIComponentVisible(\"Attribute Editor\");\n\n9 matches across 8 files\n",
+			"settings":
+			{
+				"buffer_size": 3846,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "/Applications/Autodesk/maya2013/Maya.app/Contents/scripts/startup/createAndAssignShader.mel",
+			"settings":
+			{
+				"buffer_size": 9199,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/JSHint/JSHint.sublime-build",
+	"command_palette":
+	{
+		"height": 276.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"run",
+				"Run JavaScript in the browser"
+			],
+			[
+				"upgr",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"upda",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"pc",
+				"Package Control: Discover Packages"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"remove ",
+				"Package Control: Remove Package"
+			],
+			[
+				"ss coffee",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"sort",
+				"Sort Tabs: Menu"
+			],
+			[
+				"edit",
+				"Project: Edit"
+			],
+			[
+				"project",
+				"Project: Edit"
+			],
+			[
+				"ss bash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"Package Control: list",
+				"Package Control: List Packages"
+			],
+			[
+				"js",
+				"JSHint: Linter"
+			],
+			[
+				"jshint",
+				"JSHint: Linter"
+			],
+			[
+				"svn",
+				"Preferences: SVN Settings"
+			],
+			[
+				"upg",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"align",
+				"Preferences: Alignment Key Bindings – Default"
+			],
+			[
+				"cofe",
+				"Coffee: Display JavaScript"
+			],
+			[
+				"coffee",
+				"Coffee: Run Script"
+			],
+			[
+				"prefixr",
+				"Preferences: Prefixr Key Bindings – Default"
+			],
+			[
+				"browse",
+				"Preferences: Browse Packages"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"zen",
+				"Set Syntax: ZenCoding"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"packages",
+				"Preferences: Browse Packages"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Packa",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"File: Revert"
+			]
+		],
+		"width": 579.0
+	},
+	"console":
+	{
+		"height": 127.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Applications/Autodesk/maya2013/Maya.app/Contents/scripts/others/addRecentFile.mel",
+		"/Applications/Autodesk/maya2013/Maya.app/Contents/scripts/others/getFileSequenceFormats.mel",
+		"/Users/destrado/Sites/_UA5/together-counts/lib/form/doctrine/TipForm.class.php",
+		"/Users/destrado/Sites/_UA5/together-counts/lib/model/doctrine/base/BaseActivity.class.php",
+		"/Users/destrado/Sites/_UA5/together-counts/lib/vendor/symfony/lib/widget/sfWidgetFormDateTime.class.php",
+		"/Users/destrado/Sites/_UA5/together-counts/apps/frontend/modules/tips/actions/actions.class.php",
+		"/Users/destrado/Sites/_UA5/together-counts/lib/model/doctrine/TipComplete.class.php",
+		"/Users/destrado/Sites/_UA5/together-counts/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/record/sfDoctrineRecord.class.php",
+		"/Users/destrado/Sites/_UA5/together-counts/lib/model/doctrine/sfDoctrineGuardPlugin/base/BasesfGuardUser.class.php",
+		"/Users/destrado/Sites/_UA5/together-counts/plugins/ua5AdminThemePlugin/lib/action/ua5Actions.class.php",
+		"/Users/destrado/Projects/Code/Processing/DrawingCatalog1/README.md",
+		"/Users/destrado/Sites/_Yinglei/.git/COMMIT_EDITMSG",
+		"/Users/destrado/Sites/_Yinglei/.git/rebase-merge/git-rebase-todo",
+		"/Users/destrado/Sites/_Yinglei/Gruntfile.js",
+		"/Users/destrado/Sites/_Yinglei/app/index.html",
+		"/Users/destrado/Sites/_Yinglei/app/scripts/lib/jquery.hlf.pgrid.coffee",
+		"/Users/destrado/Sites/_Yinglei/app/.htaccess",
+		"/Users/destrado/Sites/_Yinglei/package.json",
+		"/Users/destrado/Sites/_Yinglei/app/styles/main.css",
+		"/Users/destrado/Sites/_Yinglei/app/scripts/main.js",
+		"/Users/destrado/Sites/_Yinglei/app/scripts/vendor/esprima.js",
+		"/Users/destrado/Sites/_Yinglei/README.md",
+		"/Users/destrado/Sites/httpd-vhosts.conf",
+		"/Users/destrado/Sites/_Yinglei/app/styles/lib/bootstrap.css",
+		"/Users/destrado/Sites/_Yinglei/.gitignore",
+		"/Users/destrado/Sites/_Yinglei2/docco.json",
+		"/Users/destrado/Sites/_Yinglei2/app/scripts/jquery.hlf.pgrid.js",
+		"/Users/destrado/Sites/_Yinglei2/.gitignore",
+		"/Users/destrado/Sites/_Yinglei2/app/styles/main.scss",
+		"/Users/destrado/Sites/_Yinglei2/app/styles/lib/bootstrap.scss",
+		"/Users/destrado/Sites/_Yinglei2/app/styles/mixins.scss",
+		"/Users/destrado/Sites/_Yinglei2/app/scripts/app.coffee",
+		"/Users/destrado/Sites/_Yinglei2/app/scripts/lib/jquery.hlf.pgrid.coffee",
+		"/Users/destrado/Sites/_Yinglei2/app/scripts/lib/jquery.extension.hlf.event.coffee",
+		"/Users/destrado/Library/Application Support/Sublime Text 2/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/destrado/Library/Application Support/Sublime Text 2/Packages/User/JavaScript.sublime-settings",
+		"/Users/destrado/Library/Application Support/Sublime Text 2/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/Users/destrado/Sites/_Yinglei2/app/scripts/main.js",
+		"/Users/destrado/Sites/_Yinglei2/app/scripts/app.js",
+		"/Users/destrado/Sites/_Yinglei2/app/scripts/jquery.extension.hlf.core.coffee",
+		"/Users/destrado/Sites/_Yinglei2/app/styles/bootstrap.css",
+		"/Users/destrado/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/destrado/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/destrado/Library/Application Support/Sublime Text 2/Packages/SideBarEnhancements/Default (OSX).sublime-keymap",
+		"/Users/destrado/test.txt",
+		"/Users/destrado/Dropbox/Assets/_notes/test.txt",
+		"/Users/destrado/Cache/Test.sublime-project",
+		"/Users/destrado/Library/Application Support/Sublime Text 2/Packages/SideBarEnhancements/Default (Linux).sublime-keymap",
+		"/Users/destrado/Library/Application Support/Sublime Text 2/Packages/Terminal/Default (OSX).sublime-keymap",
+		"/Users/destrado/Library/Application Support/Sublime Text 2/Packages/Terminal/Terminal.sublime-settings",
+		"/Users/destrado/.bashrc",
+		"/Users/destrado/Library/Application Support/Sublime Text 2/Packages/SublimeLinter/package_control.json",
+		"/Users/destrado/.bash_profile",
+		"/Users/destrado/Dropbox/Assets/_notes/temp.txt",
+		"/Users/destrado/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+		"/Library/LaunchAgents/com.mysql.mysqld.plist",
+		"/Library/LaunchDaemons/com.mysql.mysqld.plist",
+		"/Users/destrado/.bashrc_nest",
+		"/Users/destrado/Dropbox/Port/_global/memo.txt",
+		"/etc/apache2/httpd.conf",
+		"/etc/apache2.httpd.conf",
+		"/Users/destrado/Library/Application Support/Sublime Text 2/Packages/User/Side Bar.sublime-settings",
+		"/Users/destrado/Library/Application Support/Sublime Text 2/Packages/JavaScript/function-(fun).sublime-snippet",
+		"/Users/destrado/.gitconfig",
+		"/Users/destrado/.bashrc_env",
+		"/Users/destrado/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/destrado/Projects/Code/main.sublime-project",
+		"/Users/destrado/Sites/_Main/bin/enchant.js/enchant.js",
+		"/Users/destrado/Sites/_Main/bin/enchant.js/enchant.min.js",
+		"/Users/destrado/Dropbox/Assets/_notes/key-mappings.txt",
+		"/Users/destrado/Sites/_Main/bin/html5-boilerplate/index.html",
+		"/Users/destrado/.bashrc_ua5",
+		"/Users/destrado/Cache/Customize - Tumblr.png",
+		"/Users/destrado/Dropbox/_scripts",
+		"/Users/destrado/Projects/Code/sites-archive.sublime-project",
+		"/Users/destrado/Projects/Code/work-archive.sublime-project",
+		"/Users/destrado/Library/Application Support/Sublime Text 2/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/Users/destrado/Library/Application Support/Sublime Text 2/Packages/User/SideBarGit.sublime-settings",
+		"/Users/destrado/Library/Application Support/Sublime Text 2/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/Users/destrado/Library/Application Support/Sublime Text 2/Packages/JavaScript/JavaScript.tmLanguage",
+		"/Users/destrado/Cache/SublimeTest/test.md",
+		"/Users/destrado/Cache/SublimeTest/test.sh",
+		"/Users/destrado/Library/Application Support/Sublime Text 2/Packages/Theme - Soda/Soda Dark.sublime-theme",
+		"/Users/destrado/Library/Application Support/Sublime Text 2/Packages/Color Scheme - Default/BlackboardImproved.tmTheme",
+		"/Users/destrado/Cache/SublimeTest/test.js",
+		"/Users/destrado/Library/Application Support/Sublime Text 2/Packages/SVN/SVN.sublime-settings",
+		"/Users/destrado/Library/Application Support/Sublime Text 2/Packages/CSS/CSS.tmLanguage",
+		"/Users/destrado/Library/Application Support/Sublime Text 2/Packages/SCSS/SCSS.tmLanguage",
+		"/Users/destrado/Library/Application Support/Sublime Text 2/Packages/CSS/CSS3.tmLanguage.plist",
+		"/Users/destrado/Library/Application Support/Sublime Text 2/Packages/CSS/Other/keyframe-animation-mean.tmSnippet",
+		"/Users/destrado/Library/Application Support/Sublime Text 2/Packages/SCSS/.gitignore",
+		"/Users/destrado/Library/Application Support/Sublime Text 2/Packages/Alignment/Default (OSX).sublime-keymap",
+		"/Users/destrado/Library/Application Support/Sublime Text 2/Packages/Terminal/Base File.sublime-settings",
+		"/Users/destrado/Sites/_Main/bin/jquery.js",
+		"/Users/destrado/.editorconfig",
+		"/Users/destrado/Library/Application Support/Sublime Text 2/Packages/Prefixr/Default (OSX).sublime-keymap",
+		"/Users/destrado/Library/Application Support/Sublime Text 2/Packages/JavaScript/JavaScript.tmLanguage.plist",
+		"/Users/destrado/Library/Application Support/Sublime Text 2/Packages/JavaScript/Javascript.tmLanguage",
+		"/Users/destrado/Cache/SublimeTest/foo",
+		"/Users/destrado/Projects/Code/iOS/CRDev/Classes/CRAccountModel.m",
+		"/Users/destrado/Projects/Code/iOS/CRDev/Classes/CRAccountModel.h",
+		"/Users/destrado/Projects/Code/iOS/CRDev/Classes/CRAccount.m",
+		"/Users/destrado/Projects/Code/iOS/CRDev/Classes/CRAccount.h",
+		"/Users/destrado/Cache/SublimeTest/test.html",
+		"/Users/destrado/Cache/SublimeTest/untitled",
+		"/Users/destrado/Library/Application Support/TextMate/Bundles/README.md"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 95.0,
+		"where_history":
+		[
+			"<project>",
+			"together-counts/apps/**.php",
+			"together-counts/plugins",
+			"together-counts/vendor",
+			"together-counts/apps",
+			"together-counts/apps, together-counts/lib",
+			"together-counts/apps",
+			"apps",
+			"together-counts/apps",
+			"<project>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"proc setAttr",
+			"assignCreatedShader",
+			"status_id",
+			"default",
+			"getGuardUser",
+			"unlink",
+			"link",
+			"===",
+			"=== (int)",
+			"executeUpdate",
+			"created_at",
+			"timestamp",
+			"created_at",
+			"sf",
+			"'created_at'",
+			"\"",
+			"scripts/vendor",
+			"app/scripts/",
+			"super+ctrl+c",
+			"ctrl+super+c",
+			"ctrl+c",
+			"ctrl+v",
+			"ctrl+x",
+			"ctrl+d",
+			"ctrl+r",
+			"side_",
+			"sidebar",
+			"fold",
+			"HOMEBREW_PREFIX",
+			"&gt;",
+			"&lt;",
+			"disable",
+			"slow",
+			"detect",
+			"disable",
+			"\"disable",
+			"disable",
+			"test",
+			"ignore",
+			"refresh",
+			"project",
+			"revert",
+			"file",
+			"mode",
+			"command",
+			"edit",
+			"margin",
+			"color",
+			"line",
+			"ruler",
+			"sublimelinter_gutter_marks",
+			"ruler",
+			"guide",
+			"bracket",
+			"find",
+			"highlight",
+			"indent",
+			"bracket",
+			"bracket\n\n",
+			"highl",
+			"highlight",
+			":",
+			"alt+f3",
+			":",
+			"jshint",
+			"Path",
+			"entity.name.tag.css",
+			"projection",
+			"meta.at-rule.media.css",
+			"constant.other.color.rgb-value.css",
+			"keyword.other.unit.css",
+			"support.function.misc.css",
+			"at-rule.charset.",
+			".css",
+			"constant.other.color.rgb-percentage.css",
+			"constant.other.color.rgb-value.css",
+			"constant_rgb",
+			"selection)\\b",
+			"entity.other.attribute-name.pseudo-class.css",
+			"selector_pseudo_class",
+			"punctuation.definition.entity.css",
+			"(:)",
+			"complete",
+			"autocomplete",
+			"-webkit",
+			"constant_property_value",
+			"property_values",
+			".value",
+			"property_name_error",
+			"border-box",
+			"constant_",
+			"property_list",
+			"support.type.property-name",
+			"properties",
+			"property_list",
+			".value",
+			"w3c",
+			"keyword.control.at-rule.import.css",
+			"meta.attribute-selector.css",
+			"prefix",
+			"moz",
+			"-webkit",
+			"webkit",
+			"support.constant.color.w3c-standard-color-name.css",
+			"property-values",
+			"#property-values",
+			"foo",
+			"string",
+			"keys",
+			"foo",
+			"fold",
+			"trailing-space",
+			"trailing",
+			"ctrl+t",
+			"fold",
+			"wrap"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			">",
+			"<",
+			"\":",
+			"bar"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Applications/Autodesk/maya2013/mentalray/scripts/mentalrayCustomNodeUI.mel",
+					"settings":
+					{
+						"buffer_size": 30248,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11442,
+								11442
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"box-sizing": false,
+								"compatible-vendor-prefixes": false,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": false,
+								"font-faces": false,
+								"font-sizes": false,
+								"gradients": false,
+								"ids": false,
+								"import": false,
+								"important": "warning",
+								"known-properties": false,
+								"outline-none": false,
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": false,
+								"rules-count": false,
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": false,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"devel": true,
+								"eqeqeq": false,
+								"eqnull": true,
+								"es5": true,
+								"forin": true,
+								"jquery": true,
+								"predef":
+								[
+									"exports",
+									"require",
+									"module",
+									"GLOBAL",
+									"process",
+									"__filename",
+									"__dirname",
+									"chrome",
+									"_"
+								],
+								"strict": true,
+								"sub": true,
+								"trailing": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sorttabs_lastactivated": 1352622589.47,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": true,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/MEL/Syntaxes/MEL.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2605.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"settings":
+					{
+						"buffer_size": 3846,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										354,
+										373
+									],
+									[
+										639,
+										658
+									],
+									[
+										1186,
+										1205
+									],
+									[
+										1471,
+										1490
+									],
+									[
+										1837,
+										1849
+									],
+									[
+										1979,
+										1991
+									],
+									[
+										2218,
+										2230
+									],
+									[
+										2441,
+										2453
+									],
+									[
+										2648,
+										2660
+									],
+									[
+										2871,
+										2883
+									],
+									[
+										3085,
+										3097
+									],
+									[
+										3367,
+										3379
+									],
+									[
+										3692,
+										3704
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								2632,
+								2632
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"output_tag": 3,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"sorttabs_lastactivated": 1352634384.95,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 940.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Applications/Autodesk/maya2013/Maya.app/Contents/scripts/startup/createAndAssignShader.mel",
+					"settings":
+					{
+						"buffer_size": 9199,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5048,
+								5048
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"box-sizing": false,
+								"compatible-vendor-prefixes": false,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": false,
+								"font-faces": false,
+								"font-sizes": false,
+								"gradients": false,
+								"ids": false,
+								"import": false,
+								"important": "warning",
+								"known-properties": false,
+								"outline-none": false,
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": false,
+								"rules-count": false,
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": false,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"devel": true,
+								"eqeqeq": false,
+								"eqnull": true,
+								"es5": true,
+								"forin": true,
+								"jquery": true,
+								"predef":
+								[
+									"exports",
+									"require",
+									"module",
+									"GLOBAL",
+									"process",
+									"__filename",
+									"__dirname",
+									"chrome",
+									"_"
+								],
+								"strict": true,
+								"sub": true,
+								"trailing": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sorttabs_lastactivated": 1352630571.41,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": true,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/MEL/Syntaxes/MEL.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2095.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 102.0
+	},
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"mrcustomnode",
+				"scripts/mentalrayCustomNodeUI.mel"
+			],
+			[
+				"addrece",
+				"others/addRecentFile.mel"
+			],
+			[
+				"getfil",
+				"others/getFileSequenceFormats.mel"
+			],
+			[
+				"modelsactivity",
+				"lib/model/doctrine/base/BaseActivity.class.php"
+			],
+			[
+				"sfformdoct",
+				"lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/form/sfFormDoctrine.class.php"
+			],
+			[
+				"sfform",
+				"lib/vendor/symfony/lib/form/sfForm.class.php"
+			],
+			[
+				"tipcom",
+				"lib/model/doctrine/TipComplete.class.php"
+			],
+			[
+				"frontendtipactions",
+				"apps/frontend/modules/tips/actions/actions.class.php"
+			],
+			[
+				"sfwidgetformdatetime",
+				"lib/vendor/symfony/lib/widget/sfWidgetFormDateTime.class.php"
+			],
+			[
+				"vendordoctrinerecord",
+				"lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Record.php"
+			],
+			[
+				"record",
+				"lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/record/sfDoctrineRecord.class.php"
+			],
+			[
+				"symfonydoctrinetable",
+				"lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Table.php"
+			],
+			[
+				"pluginsfguarduser",
+				"plugins/sfDoctrineGuardPlugin/lib/model/doctrine/PluginsfGuardUser.class.php"
+			],
+			[
+				"basesfguarduser",
+				"lib/model/doctrine/sfDoctrineGuardPlugin/base/BasesfGuardUser.class.php"
+			],
+			[
+				"ua5action",
+				"plugins/ua5AdminThemePlugin/lib/action/ua5Action.class.php"
+			],
+			[
+				"ua5actions",
+				"plugins/ua5AdminThemePlugin/lib/action/ua5Actions.class.php"
+			],
+			[
+				"frontendmodulesactions.class",
+				"apps/frontend/modules/profile/actions/actions.class.php"
+			],
+			[
+				"apirouting",
+				"apps/api/config/routing.yml"
+			],
+			[
+				"appsconfigsettings",
+				"apps/api/config/settings.yml"
+			],
+			[
+				"temp.xt",
+				"_notes/temp.txt"
+			],
+			[
+				"memo",
+				"_global/memo.txt"
+			],
+			[
+				"hell",
+				"Cache/Courses/Algs4/HelloWorld.java"
+			],
+			[
+				"ench",
+				"bin/enchant.js/enchant.js"
+			],
+			[
+				"enchan",
+				"bin/enchant.js/enchant.js"
+			],
+			[
+				"enc",
+				"bin/enchant.js/enchant.js"
+			],
+			[
+				"keym",
+				"_notes/key-mappings.txt"
+			],
+			[
+				"key-mapp",
+				"_notes/key-mappings.txt"
+			],
+			[
+				"html5boilerplateindex.html",
+				"bin/html5-boilerplate/index.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 291.0,
+	"status_bar_visible": true
+}

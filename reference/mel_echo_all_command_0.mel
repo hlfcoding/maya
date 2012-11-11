@@ -1,0 +1,458 @@
+file -f -new;
+// Warning: Active stereo does not work with Aero enabled. Active stereo has been disabled. //
+// untitled //
+commandPort -securityWarning -name commandportDefault;
+Import;
+Import;
+projectViewer Import; checkForUnknownNodes();
+fileOperationsOptionsUISetup Import FileDialogOptionsGrpBoxLayout;
+fo_changeRadioCollection ("Import");
+np_getPrimaryProjectFileRules 0;
+// Result: Scenes scene scenes Templates templates assets Images images images Source Images sourceImages sourceimages Render Data renderData  Particles particles particles Clips clips clips Sound sound  Scripts scripts  Disk Cache diskCache data Movies movie data Translator Data translatorData  AutoSave autoSave autosave //
+fileOperationsOptionsUIInitValues Import FileDialogOptionsGrpBoxLayout"All Files";
+fileOperationsSelectionChangedCallback Import FileDialogOptionsGrpBoxLayout "E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/bridge_front_handle1.obj";
+fileOperationsSelectionChangedCallback Import FileDialogOptionsGrpBoxLayout "E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_stand1.OBJ";
+fileOperationsOptionsUICallback Import FileDialogOptionsGrpBoxLayout;
+(u"E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_stand1.OBJ").replace("\\","/");
+# Result: E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_stand1.OBJ #
+(u"E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_stand1.OBJ").replace("\\","/");
+# Result: E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_stand1.OBJ #
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+(u"E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_stand1.OBJ").replace("\\","/");
+# Result: E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_stand1.OBJ #
+file -import -type "OBJ" -ra true -namespace "bridge_front_stand1" -options "mo=1"  -pr -loadReferenceDepth "all" "E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_stand1.OBJ";
+fileCmdCallback;
+renameTextureViewPanel;
+animationEditorFileCallback;
+optionVar -exists dynPrefRunupToCurrentTime;
+// Result: 1 //
+optionVar -q dynPrefRunupToCurrentTime;
+// Result: 0 //
+proxyRefreshUI;
+// Result: defaultMat //
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+import os as __os
+try:
+  __os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+changeToolIcon;
+symbolCheckBox -edit -value `autoKeyframe -query -state` MayaWindow|toolBar5|MainPlaybackRangeLayout|formLayout10|symbolCheckBox1;
+// Result: MayaWindow|toolBar5|MainPlaybackRangeLayout|formLayout10|symbolCheckBox1 //
+setMinMaxPlayback MayaWindow|toolBar5|MainPlaybackRangeLayout|formLayout10|floatField3 MayaWindow|toolBar5|MainPlaybackRangeLayout|formLayout10|floatField4;
+updateCharacterizationCharacterListAndBoneAssignments;
+Import;
+projectViewer Import; checkForUnknownNodes();
+fileOperationsOptionsUISetup Import FileDialogOptionsGrpBoxLayout;
+fo_changeRadioCollection ("Import");
+np_getPrimaryProjectFileRules 0;
+// Result: Scenes scene scenes Templates templates assets Images images images Source Images sourceImages sourceimages Render Data renderData  Particles particles particles Clips clips clips Sound sound  Scripts scripts  Disk Cache diskCache data Movies movie data Translator Data translatorData  AutoSave autoSave autosave //
+fileOperationsOptionsUIInitValues Import FileDialogOptionsGrpBoxLayout"All Files";
+fileOperationsSelectionChangedCallback Import FileDialogOptionsGrpBoxLayout "E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_handle1.OBJ";
+fileOperationsOptionsUICallback Import FileDialogOptionsGrpBoxLayout;
+(u"E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_handle1.OBJ").replace("\\","/");
+# Result: E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_handle1.OBJ #
+(u"E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_handle1.OBJ").replace("\\","/");
+# Result: E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_handle1.OBJ #
+(u"E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_handle1.OBJ").replace("\\","/");
+# Result: E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_handle1.OBJ #
+file -import -type "OBJ" -ra true -namespace "bridge_front_handle1" -options "mo=1"  -pr -loadReferenceDepth "all" "E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_handle1.OBJ";
+fileCmdCallback;
+renameTextureViewPanel;
+animationEditorFileCallback;
+optionVar -exists dynPrefRunupToCurrentTime;
+// Result: 1 //
+optionVar -q dynPrefRunupToCurrentTime;
+// Result: 0 //
+proxyRefreshUI;
+// Result: defaultMat //
+changeToolIcon;
+symbolCheckBox -edit -value `autoKeyframe -query -state` MayaWindow|toolBar5|MainPlaybackRangeLayout|formLayout10|symbolCheckBox1;
+// Result: MayaWindow|toolBar5|MainPlaybackRangeLayout|formLayout10|symbolCheckBox1 //
+setMinMaxPlayback MayaWindow|toolBar5|MainPlaybackRangeLayout|formLayout10|floatField3 MayaWindow|toolBar5|MainPlaybackRangeLayout|formLayout10|floatField4;
+updateCharacterizationCharacterListAndBoneAssignments;
+Import;
+projectViewer Import; checkForUnknownNodes();
+fileOperationsOptionsUISetup Import FileDialogOptionsGrpBoxLayout;
+fo_changeRadioCollection ("Import");
+np_getPrimaryProjectFileRules 0;
+// Result: Scenes scene scenes Templates templates assets Images images images Source Images sourceImages sourceimages Render Data renderData  Particles particles particles Clips clips clips Sound sound  Scripts scripts  Disk Cache diskCache data Movies movie data Translator Data translatorData  AutoSave autoSave autosave //
+fileOperationsOptionsUIInitValues Import FileDialogOptionsGrpBoxLayout"All Files";
+fileOperationsSelectionChangedCallback Import FileDialogOptionsGrpBoxLayout "E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_pillar.OBJ";
+fileOperationsOptionsUICallback Import FileDialogOptionsGrpBoxLayout;
+(u"E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_pillar.OBJ").replace("\\","/");
+# Result: E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_pillar.OBJ #
+(u"E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_pillar.OBJ").replace("\\","/");
+# Result: E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_pillar.OBJ #
+(u"E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_pillar.OBJ").replace("\\","/");
+# Result: E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_pillar.OBJ #
+file -import -type "OBJ" -ra true -namespace "bridge_front_pillar" -options "mo=1"  -pr -loadReferenceDepth "all" "E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_pillar.OBJ";
+fileCmdCallback;
+renameTextureViewPanel;
+animationEditorFileCallback;
+optionVar -exists dynPrefRunupToCurrentTime;
+// Result: 1 //
+optionVar -q dynPrefRunupToCurrentTime;
+// Result: 0 //
+proxyRefreshUI;
+// Result: defaultMat //
+changeToolIcon;
+symbolCheckBox -edit -value `autoKeyframe -query -state` MayaWindow|toolBar5|MainPlaybackRangeLayout|formLayout10|symbolCheckBox1;
+// Result: MayaWindow|toolBar5|MainPlaybackRangeLayout|formLayout10|symbolCheckBox1 //
+setMinMaxPlayback MayaWindow|toolBar5|MainPlaybackRangeLayout|formLayout10|floatField3 MayaWindow|toolBar5|MainPlaybackRangeLayout|formLayout10|floatField4;
+updateCharacterizationCharacterListAndBoneAssignments;
+Import;
+projectViewer Import; checkForUnknownNodes();
+fileOperationsOptionsUISetup Import FileDialogOptionsGrpBoxLayout;
+fo_changeRadioCollection ("Import");
+np_getPrimaryProjectFileRules 0;
+// Result: Scenes scene scenes Templates templates assets Images images images Source Images sourceImages sourceimages Render Data renderData  Particles particles particles Clips clips clips Sound sound  Scripts scripts  Disk Cache diskCache data Movies movie data Translator Data translatorData  AutoSave autoSave autosave //
+fileOperationsOptionsUIInitValues Import FileDialogOptionsGrpBoxLayout"All Files";
+fileOperationsSelectionChangedCallback Import FileDialogOptionsGrpBoxLayout "E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_main.OBJ";
+fileOperationsOptionsUICallback Import FileDialogOptionsGrpBoxLayout;
+(u"E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_main.OBJ").replace("\\","/");
+# Result: E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_main.OBJ #
+(u"E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_main.OBJ").replace("\\","/");
+# Result: E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_main.OBJ #
+(u"E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_main.OBJ").replace("\\","/");
+# Result: E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_main.OBJ #
+file -import -type "OBJ" -ra true -namespace "bridge_front_main" -options "mo=1"  -pr -loadReferenceDepth "all" "E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_main.OBJ";
+fileCmdCallback;
+renameTextureViewPanel;
+animationEditorFileCallback;
+optionVar -exists dynPrefRunupToCurrentTime;
+// Result: 1 //
+optionVar -q dynPrefRunupToCurrentTime;
+// Result: 0 //
+proxyRefreshUI;
+// Result: defaultMat //
+changeToolIcon;
+symbolCheckBox -edit -value `autoKeyframe -query -state` MayaWindow|toolBar5|MainPlaybackRangeLayout|formLayout10|symbolCheckBox1;
+// Result: MayaWindow|toolBar5|MainPlaybackRangeLayout|formLayout10|symbolCheckBox1 //
+setMinMaxPlayback MayaWindow|toolBar5|MainPlaybackRangeLayout|formLayout10|floatField3 MayaWindow|toolBar5|MainPlaybackRangeLayout|formLayout10|floatField4;
+updateCharacterizationCharacterListAndBoneAssignments;
+Import;
+projectViewer Import; checkForUnknownNodes();
+fileOperationsOptionsUISetup Import FileDialogOptionsGrpBoxLayout;
+fo_changeRadioCollection ("Import");
+np_getPrimaryProjectFileRules 0;
+// Result: Scenes scene scenes Templates templates assets Images images images Source Images sourceImages sourceimages Render Data renderData  Particles particles particles Clips clips clips Sound sound  Scripts scripts  Disk Cache diskCache data Movies movie data Translator Data translatorData  AutoSave autoSave autosave //
+fileOperationsOptionsUIInitValues Import FileDialogOptionsGrpBoxLayout"All Files";
+fileOperationsSelectionChangedCallback Import FileDialogOptionsGrpBoxLayout "E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_stand2.OBJ";
+fileOperationsOptionsUICallback Import FileDialogOptionsGrpBoxLayout;
+(u"E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_stand2.OBJ").replace("\\","/");
+# Result: E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_stand2.OBJ #
+(u"E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_stand2.OBJ").replace("\\","/");
+# Result: E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_stand2.OBJ #
+(u"E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_stand2.OBJ").replace("\\","/");
+# Result: E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_stand2.OBJ #
+file -import -type "OBJ" -ra true -namespace "bridge_front_stand2" -options "mo=1"  -pr -loadReferenceDepth "all" "E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_stand2.OBJ";
+fileCmdCallback;
+renameTextureViewPanel;
+animationEditorFileCallback;
+optionVar -exists dynPrefRunupToCurrentTime;
+// Result: 1 //
+optionVar -q dynPrefRunupToCurrentTime;
+// Result: 0 //
+proxyRefreshUI;
+// Result: defaultMat //
+changeToolIcon;
+symbolCheckBox -edit -value `autoKeyframe -query -state` MayaWindow|toolBar5|MainPlaybackRangeLayout|formLayout10|symbolCheckBox1;
+// Result: MayaWindow|toolBar5|MainPlaybackRangeLayout|formLayout10|symbolCheckBox1 //
+setMinMaxPlayback MayaWindow|toolBar5|MainPlaybackRangeLayout|formLayout10|floatField3 MayaWindow|toolBar5|MainPlaybackRangeLayout|formLayout10|floatField4;
+updateCharacterizationCharacterListAndBoneAssignments;
+Import;
+projectViewer Import; checkForUnknownNodes();
+fileOperationsOptionsUISetup Import FileDialogOptionsGrpBoxLayout;
+fo_changeRadioCollection ("Import");
+np_getPrimaryProjectFileRules 0;
+// Result: Scenes scene scenes Templates templates assets Images images images Source Images sourceImages sourceimages Render Data renderData  Particles particles particles Clips clips clips Sound sound  Scripts scripts  Disk Cache diskCache data Movies movie data Translator Data translatorData  AutoSave autoSave autosave //
+fileOperationsOptionsUIInitValues Import FileDialogOptionsGrpBoxLayout"All Files";
+fileOperationsSelectionChangedCallback Import FileDialogOptionsGrpBoxLayout "E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_subframe.OBJ";
+fileOperationsOptionsUICallback Import FileDialogOptionsGrpBoxLayout;
+(u"E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_subframe.OBJ").replace("\\","/");
+# Result: E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_subframe.OBJ #
+(u"E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_subframe.OBJ").replace("\\","/");
+# Result: E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_subframe.OBJ #
+(u"E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_subframe.OBJ").replace("\\","/");
+# Result: E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_subframe.OBJ #
+file -import -type "OBJ" -ra true -namespace "bridge_front_subframe" -options "mo=1"  -pr -loadReferenceDepth "all" "E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_subframe.OBJ";
+fileCmdCallback;
+renameTextureViewPanel;
+animationEditorFileCallback;
+optionVar -exists dynPrefRunupToCurrentTime;
+// Result: 1 //
+optionVar -q dynPrefRunupToCurrentTime;
+// Result: 0 //
+proxyRefreshUI;
+// Result: defaultMat //
+changeToolIcon;
+symbolCheckBox -edit -value `autoKeyframe -query -state` MayaWindow|toolBar5|MainPlaybackRangeLayout|formLayout10|symbolCheckBox1;
+// Result: MayaWindow|toolBar5|MainPlaybackRangeLayout|formLayout10|symbolCheckBox1 //
+setMinMaxPlayback MayaWindow|toolBar5|MainPlaybackRangeLayout|formLayout10|floatField3 MayaWindow|toolBar5|MainPlaybackRangeLayout|formLayout10|floatField4;
+updateCharacterizationCharacterListAndBoneAssignments;
+Import;
+projectViewer Import; checkForUnknownNodes();
+fileOperationsOptionsUISetup Import FileDialogOptionsGrpBoxLayout;
+fo_changeRadioCollection ("Import");
+np_getPrimaryProjectFileRules 0;
+// Result: Scenes scene scenes Templates templates assets Images images images Source Images sourceImages sourceimages Render Data renderData  Particles particles particles Clips clips clips Sound sound  Scripts scripts  Disk Cache diskCache data Movies movie data Translator Data translatorData  AutoSave autoSave autosave //
+fileOperationsOptionsUIInitValues Import FileDialogOptionsGrpBoxLayout"All Files";
+fileOperationsSelectionChangedCallback Import FileDialogOptionsGrpBoxLayout "E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_handle2.OBJ";
+fileOperationsOptionsUICallback Import FileDialogOptionsGrpBoxLayout;
+(u"E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_handle2.OBJ").replace("\\","/");
+# Result: E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_handle2.OBJ #
+(u"E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_handle2.OBJ").replace("\\","/");
+# Result: E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_handle2.OBJ #
+(u"E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_handle2.OBJ").replace("\\","/");
+# Result: E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_handle2.OBJ #
+file -import -type "OBJ" -ra true -namespace "bridge_front_handle2" -options "mo=1"  -pr -loadReferenceDepth "all" "E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_front/export_normal/bridge_front_handle2.OBJ";
+fileCmdCallback;
+renameTextureViewPanel;
+animationEditorFileCallback;
+optionVar -exists dynPrefRunupToCurrentTime;
+// Result: 1 //
+optionVar -q dynPrefRunupToCurrentTime;
+// Result: 0 //
+proxyRefreshUI;
+// Result: defaultMat //
+changeToolIcon;
+symbolCheckBox -edit -value `autoKeyframe -query -state` MayaWindow|toolBar5|MainPlaybackRangeLayout|formLayout10|symbolCheckBox1;
+// Result: MayaWindow|toolBar5|MainPlaybackRangeLayout|formLayout10|symbolCheckBox1 //
+setMinMaxPlayback MayaWindow|toolBar5|MainPlaybackRangeLayout|formLayout10|floatField3 MayaWindow|toolBar5|MainPlaybackRangeLayout|formLayout10|floatField4;
+updateCharacterizationCharacterListAndBoneAssignments;
+FrameSelected;
+fitPanel -selected;

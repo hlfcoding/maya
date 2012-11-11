@@ -1,0 +1,22 @@
+setAttr "file1.filterType" 0;
+checkFilterType "file1";
+AEfileTextureBrowser "AEassignTextureCB  file1.fileTextureName";
+(u"").replace("\\","/");
+# Result:  #
+np_getPrimaryProjectFileRules 0;
+// Result: Scenes scene scenes Templates templates assets Images images images Source Images sourceImages sourceimages Render Data renderData  Particles particles particles Clips clips clips Sound sound  Scripts scripts  Disk Cache diskCache data Movies movie data Translator Data translatorData  AutoSave autoSave autosave //
+(u"E:/proj/thesis/02_shots/shot99/3d/zbrush/bridge_far_right_1/export/bridge_far_right_1_main-TM_u0_v0.tif").replace("\\","/");
+# Result: E:/proj/thesis/02_shots/shot99/3d/zbrush/bridge_far_right_1/export/bridge_far_right_1_main-TM_u0_v0.tif #
+optionVar -q maxImageSizeForSwatchGen;
+
+setAttr "file2.filterType" 0;
+checkFilterType "file2";
+AEfileTextureBrowser "AEassignTextureCB  file2.fileTextureName";
+(u"").replace("\\","/");
+# Result:  #
+np_getPrimaryProjectFileRules 0;
+// Result: Scenes scene scenes Templates templates assets Images images images Source Images sourceImages sourceimages Render Data renderData  Particles particles particles Clips clips clips Sound sound  Scripts scripts  Disk Cache diskCache data Movies movie data Translator Data translatorData  AutoSave autoSave autosave //
+(u"E:/proj/thesis/02_shots/shot99/3d/zbrush/bridge_far_right_1/export/bridge_far_right_1_main-NM_u0_v0.tif").replace("\\","/");
+# Result: E:/proj/thesis/02_shots/shot99/3d/zbrush/bridge_far_right_1/export/bridge_far_right_1_main-NM_u0_v0.tif #
+optionVar -q maxImageSizeForSwatchGen;
+// Result: 2000 //

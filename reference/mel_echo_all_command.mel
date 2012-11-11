@@ -1,0 +1,2053 @@
+file -f -new;
+// Warning: Active stereo does not work with Aero enabled. Active stereo has been disabled. //
+// untitled //
+commandPort -securityWarning -name commandportDefault;
+// Initializing V-Ray for Maya
+
+updateRendererUI;
+// mental ray for Maya 2012
+// mental ray for Maya: setup
+// mental ray for Maya: initialize
+// mental ray for Maya: using 1 license
+// mental ray for Maya: register extensions
+// mental ray Node Factory: loaded
+// mental ray for Maya: successfully registered
+// parsing C:/Program Files/Autodesk/Maya2012/mentalray/include/AdskShaderSDKWrappers.mi
+// generating Maya nodes...
+// parsing C:/Program Files/Autodesk/Maya2012/mentalray/include/architectural.mi
+// loading C:/Program Files/Autodesk/Maya2012/mentalray/lib/architectural.dll
+// generating Maya nodes...
+// parsing C:/Program Files/Autodesk/Maya2012/mentalray/include/base.mi
+// loading C:/Program Files/Autodesk/Maya2012/mentalray/lib/base.dll
+// generating Maya nodes...
+// parsing C:/Program Files/Autodesk/Maya2012/mentalray/include/contour.mi
+// loading C:/Program Files/Autodesk/Maya2012/mentalray/lib/contour.dll
+// generating Maya nodes...
+// parsing C:/Program Files/Autodesk/Maya2012/mentalray/include/paint.mi
+// loading C:/Program Files/Autodesk/Maya2012/mentalray/lib/paint.dll
+// generating Maya nodes...
+// parsing C:/Program Files/Autodesk/Maya2012/mentalray/include/physics.mi
+// loading C:/Program Files/Autodesk/Maya2012/mentalray/lib/physics.dll
+// generating Maya nodes...
+// parsing C:/Program Files/Autodesk/Maya2012/mentalray/include/production.mi
+// loading C:/Program Files/Autodesk/Maya2012/mentalray/lib/production.dll
+// generating Maya nodes...
+// parsing C:/Program Files/Autodesk/Maya2012/mentalray/include/subsurface.mi
+// loading C:/Program Files/Autodesk/Maya2012/mentalray/lib/subsurface.dll
+// generating Maya nodes...
+// parsing C:/Program Files/Autodesk/Maya2012/mentalray/include/surfaceSampler.mi
+// loading C:/Program Files/Autodesk/Maya2012/mentalray/lib/surfaceSampler.dll
+// generating Maya nodes...
+updateRendererUI;
+file -f -options "v=0"  -typ "mayaAscii" -o "E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_far_right_group/export/bridge_far_right_group.ma";
+addRecentFile("E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_far_right_group/export/bridge_far_right_group.ma", "mayaAscii");
+// File read in 1 seconds.
+createModelPanelMenu modelPanel1;
+createModelPanelMenu modelPanel2;
+createModelPanelMenu modelPanel3;
+createModelPanelMenu modelPanel4;
+createOutlinerPanelMenu outlinerPanel1;
+buildPanelPopupMenu renderView;
+buildPanelPopupMenu scriptEditorPanel1;
+evalDeferred "showWindow scriptEditorPanel1Window;";
+showWindow scriptEditorPanel1Window;
+select -r bridge_far_right_2_main:ZBrush_defualt_group ;
+autoUpdateAttrEd;
+listHistory -pdo true -lf false -il 2 "|bridge_far_right_2_main:ZBrush_defualt_group";
+listHistory -pdo true -lf false -il 2 -f true "|bridge_far_right_2_main:ZBrush_defualt_group";
+listHistory -pdo true -lf false -il 2 "|bridge_far_right_2_main:ZBrush_defualt_group|bridge_far_right_2_main:ZBrush_defualt_groupShape";
+listHistory -pdo true -lf false -il 2 -f true "|bridge_far_right_2_main:ZBrush_defualt_group|bridge_far_right_2_main:ZBrush_defualt_groupShape";
+vrayUpdateAE;
+exists AEmeshTemplate;
+// Result: 1 //
+AEmeshTemplate "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+scrollLayout -hst 0 -cr true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2 //
+columnLayout -adj true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2 //
+frameLayout -collapsable true -label "Tessellation Attributes" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout9 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout9|columnLayout3 //
+frameLayout -collapsable true -label "Mesh Component Display" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout10 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout10|columnLayout4 //
+frameLayout -collapsable true -label "Mesh Controls" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout11 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout11|columnLayout5 //
+frameLayout -collapsable true -label "Tangent Space" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout12 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout12|columnLayout6 //
+frameLayout -collapsable true -label "Smooth Mesh" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout13 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout13|columnLayout7 //
+frameLayout -collapsable true -label "Displacement Map" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout14 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout14|columnLayout8 //
+frameLayout -collapsable true -label "Render Stats" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout15 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout15|columnLayout9 //
+frameLayout -collapsable true -label "mental ray" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10 //
+frameLayout -collapsable true -label "Object Display" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout17 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout17|columnLayout11 //
+frameLayout -collapsable true -label "Node Behavior" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout18 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout18|columnLayout12 //
+frameLayout -collapsable true -label "Extra Attributes" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout19 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout19|columnLayout13 //
+columnLayout -adj true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|columnLayout14 //
+setParent ..;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2 //
+columnLayout -adj true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|columnLayout15 //
+setParent ..;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2 //
+columnLayout -adj true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|columnLayout16 //
+setParent ..;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2 //
+columnLayout -adj true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|columnLayout17 //
+setParent ..;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2 //
+columnLayout -adj true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|columnLayout18 //
+setParent ..;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2 //
+columnLayout -adj true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|columnLayout19 //
+setParent ..;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2 //
+columnLayout -adj true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|columnLayout20 //
+setParent ..;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2 //
+columnLayout -adj true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|columnLayout21 //
+AEmakeDynRampClothCollisionInteractiveNew( "bridge_far_right_2_main:ZBrush_defualt_groupShape.collisionOffsetVelocityMultiplier" );
+columnLayout -adj true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|columnLayout22 //
+AEmakeDynRampClothCollisionInteractiveNew( "bridge_far_right_2_main:ZBrush_defualt_groupShape.collisionDepthVelocityMultiplier" );
+setParent ..; setParent ..;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout //
+setUITemplate -ppt;
+// Result: NONE //
+updateAnimLayerEditor("AnimLayerTab");
+statusLineUpdateInputField;
+vrayUpdateAE;
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) checkMeshUseMaxSubd "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) checkMeshUseMinScreen "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) checkMeshUseMaxUv "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) checkMeshUseMinEdgeLength "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) checkMeshUseMaxEdgeLength "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) checkMeshDisplayVertices "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) checkMeshDisplayBorder "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) checkMeshDisplayUVs "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) checkMeshDisplayNormals "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) checkMeshDisplayNormals "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) checkMeshDisplayNormals "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) checkMeshAllowTopologyMod "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) checkMeshReuseTrianglesAE "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) SMPcheckUsePreviewForRender "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) checkDoubleSided "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) checkGeomAntialiasingOverride "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) checkGeomShadingSamplesOverride "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) checkGeomMaxVisSamplesOverride "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) AEmentalrayOverrideObjectSamplesFlagsActive "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) AEmentalrayOverrideFinalGatherFlagsActive "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) AEmentalrayOverrideGlobalIlluminationFlagsActive "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) AEmentalrayOverrideCausticsFlagsActive "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) AEcheckGhostControl "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) checkDrawEnabled overrideEnabled overrideDisplayType overrideLevelOfDetail overrideShading overrideTexturing overridePlayback overrideVisibility overrideColor "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+vrayUpdateAEJob;
+vrayUpdateAEJob;
+buildObjectMenuItemsNow "MayaWindow|formLayout1|viewPanes|modelPanel4|modelPanel4|modelPanel4|modelPanel4ObjectPop";
+dagMenuProc("MayaWindow|formLayout1|viewPanes|modelPanel4|modelPanel4|modelPanel4|modelPanel4ObjectPop", "bridge_far_right_2_main:ZBrush_defualt_group");
+buildAssignShaderMenu MayaWindow|formLayout1|viewPanes|modelPanel4|modelPanel4|modelPanel4|modelPanel4ObjectPop|menuItem528 "";
+buildAssignFavouriteMenu MayaWindow|formLayout1|viewPanes|modelPanel4|modelPanel4|modelPanel4|modelPanel4ObjectPop|menuItem527 "";
+import maya.app.general.tlfavorites as _fav;_fav.readFavorites("C:/Users/Yinglei/Documents/maya/2012-x64/prefs/renderNodeTypeFavorites")
+# Result: ['Maya/Surface/Blinn', 'blinn', 'Maya/Surface/Lambert', 'lambert', 'Maya/Surface/Layered Shader', 'layeredShader', 'Maya/Surface/Phong', 'phong', 'Maya/Surface/Phong E', 'phongE', 'Maya/Surface/Ramp Shader', 'rampShader', 'Maya/Surface/Surface Shader', 'surfaceShader', 'Maya/Surface/Use Background', 'useBackground'] #
+del _fav
+buildAssignFavouriteMenu MayaWindow|formLayout1|viewPanes|modelPanel4|modelPanel4|modelPanel4|modelPanel4ObjectPop|menuItem527 "";
+import maya.app.general.tlfavorites as _fav;_fav.readFavorites("C:/Users/Yinglei/Documents/maya/2012-x64/prefs/renderNodeTypeFavorites")
+# Result: ['Maya/Surface/Blinn', 'blinn', 'Maya/Surface/Lambert', 'lambert', 'Maya/Surface/Layered Shader', 'layeredShader', 'Maya/Surface/Phong', 'phong', 'Maya/Surface/Phong E', 'phongE', 'Maya/Surface/Ramp Shader', 'rampShader', 'Maya/Surface/Surface Shader', 'surfaceShader', 'Maya/Surface/Use Background', 'useBackground'] #
+del _fav
+createAssignNewMaterialTreeLister "";
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("Maya/Surface/VRay Blend Mtl","VRayBlendMtl")
+_fav.addPath("Maya/Surface/VRay Bump Mtl","VRayBumpMtl")
+_fav.addPath("Maya/Surface/VRay Car Paint Mtl","VRayCarPaintMtl")
+_fav.addPath("Maya/Surface/VRay Fast SSS2","VRayFastSSS2")
+_fav.addPath("Maya/Surface/VRay Light Mtl","VRayLightMtl")
+_fav.addPath("Maya/Surface/VRay Mesh Material","VRayMeshMaterial")
+_fav.addPath("Maya/Surface/VRay Mtl","VRayMtl")
+_fav.addPath("Maya/Surface/VRay Mtl 2Sided","VRayMtl2Sided")
+_fav.addPath("Maya/Surface/VRay Mtl Wrapper","VRayMtlWrapper")
+_fav.addPath("Maya/Surface/VRay Plugin Node Mtl","VRayPluginNodeMtl")
+_fav.addPath("Maya/Surface/VRay Simbiont","VRaySimbiont")
+_fav.addPath("Maya/Surface/Anisotropic","anisotropic")
+_fav.addPath("Maya/Surface/Blinn","blinn")
+_fav.addPath("Maya/Surface/Hair Tube Shader","hairTubeShader")
+_fav.addPath("Maya/Surface/Lambert","lambert")
+_fav.addPath("Maya/Surface/Layered Shader","layeredShader")
+_fav.addPath("Maya/Surface/Ocean Shader","oceanShader")
+_fav.addPath("Maya/Surface/Phong","phong")
+_fav.addPath("Maya/Surface/Phong E","phongE")
+_fav.addPath("Maya/Surface/Ramp Shader","rampShader")
+_fav.addPath("Maya/Surface/Shading Map","shadingMap")
+_fav.addPath("Maya/Surface/Surface Shader","surfaceShader")
+_fav.addPath("Maya/Surface/Use Background","useBackground")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("Maya/Volumetric/VRay Environment Fog","VRayEnvironmentFog")
+_fav.addPath("Maya/Volumetric/VRay Scatter Fog","VRayScatterFog")
+_fav.addPath("Maya/Volumetric/VRay Simple Fog","VRaySimpleFog")
+_fav.addPath("Maya/Volumetric/VRay Sphere Fade Volume","VRaySphereFadeVolume")
+_fav.addPath("Maya/Volumetric/Env Fog","envFog")
+_fav.addPath("Maya/Volumetric/Fluid Shape","fluidShape")
+_fav.addPath("Maya/Volumetric/Light Fog","lightFog")
+_fav.addPath("Maya/Volumetric/Particle Cloud","particleCloud")
+_fav.addPath("Maya/Volumetric/Volume Fog","volumeFog")
+_fav.addPath("Maya/Volumetric/Volume Shader","volumeShader")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/Materials/dgs_material","dgs_material")
+_fav.addPath("mental ray/Materials/dielectric_material","dielectric_material")
+_fav.addPath("mental ray/Materials/mi_car_paint_phen","mi_car_paint_phen")
+_fav.addPath("mental ray/Materials/mi_car_paint_phen_x","mi_car_paint_phen_x")
+_fav.addPath("mental ray/Materials/mi_car_paint_phen_x_passes","mi_car_paint_phen_x_passes")
+_fav.addPath("mental ray/Materials/mi_metallic_paint","mi_metallic_paint")
+_fav.addPath("mental ray/Materials/mi_metallic_paint_x","mi_metallic_paint_x")
+_fav.addPath("mental ray/Materials/mi_metallic_paint_x_passes","mi_metallic_paint_x_passes")
+_fav.addPath("mental ray/Materials/mia_material","mia_material")
+_fav.addPath("mental ray/Materials/mia_material_x","mia_material_x")
+_fav.addPath("mental ray/Materials/mia_material_x_passes","mia_material_x_passes")
+_fav.addPath("mental ray/Materials/mib_glossy_reflection","mib_glossy_reflection")
+_fav.addPath("mental ray/Materials/mib_glossy_refraction","mib_glossy_refraction")
+_fav.addPath("mental ray/Materials/mib_illum_blinn","mib_illum_blinn")
+_fav.addPath("mental ray/Materials/mib_illum_cooktorr","mib_illum_cooktorr")
+_fav.addPath("mental ray/Materials/mib_illum_hair","mib_illum_hair")
+_fav.addPath("mental ray/Materials/mib_illum_lambert","mib_illum_lambert")
+_fav.addPath("mental ray/Materials/mib_illum_phong","mib_illum_phong")
+_fav.addPath("mental ray/Materials/mib_illum_ward","mib_illum_ward")
+_fav.addPath("mental ray/Materials/mib_illum_ward_deriv","mib_illum_ward_deriv")
+_fav.addPath("mental ray/Materials/misss_call_shader","misss_call_shader")
+_fav.addPath("mental ray/Materials/misss_fast_shader","misss_fast_shader")
+_fav.addPath("mental ray/Materials/misss_fast_shader_x","misss_fast_shader_x")
+_fav.addPath("mental ray/Materials/misss_fast_shader_x_passes","misss_fast_shader_x_passes")
+_fav.addPath("mental ray/Materials/misss_fast_simple_maya","misss_fast_simple_maya")
+_fav.addPath("mental ray/Materials/misss_fast_skin_maya","misss_fast_skin_maya")
+_fav.addPath("mental ray/Materials/misss_physical","misss_physical")
+_fav.addPath("mental ray/Materials/misss_set_normal","misss_set_normal")
+_fav.addPath("mental ray/Materials/misss_skin_specular","misss_skin_specular")
+_fav.addPath("mental ray/Materials/path_material","path_material")
+_fav.addPath("mental ray/Materials/transmat","transmat")
+del _fav
+import maya.app.general.tlfavorites as _fav;_fav.attachStore('assignNewMaterialWindow|assignWindowForm|nodeTreeLister1',"C:/Users/Yinglei/Documents/maya/2012-x64/prefs/renderNodeTypeFavorites");del _fav
+# Result: <maya.app.general.tlfavorites.TLFavoriteStore object at 0x000000002C5DDC18> #
+mrCreateCustomNode -asShader "assignCreatedShader %type \"\" %node \"bridge_far_right_2_main:ZBrush_defualt_group\"" mia_material_x_passes;
+assignCreatedShader "mia_material_x_passes" "" mia_material_x_passes2 "bridge_far_right_2_main:ZBrush_defualt_group";
+connectNodeToNodeOverride("mia_material_x_passes2", "mia_material_x_passes2SG");
+// Result: 1 //
+connectAttr -f mia_material_x_passes2.message mia_material_x_passes2SG.miPhotonShader;connectAttr -f mia_material_x_passes2.message mia_material_x_passes2SG.miShadowShader;connectAttr -f mia_material_x_passes2.message mia_material_x_passes2SG.miMaterialShader;
+// Result: Connected mia_material_x_passes2.message to mia_material_x_passes2SG.miMaterialShader. //
+sets -e -forceElement mia_material_x_passes2SG;
+// Result: mia_material_x_passes2SG //
+// Created shader mia_material_x_passes and assigned to the selected objects. //
+sets -renderable true -noSurfaceShader true -empty -name mia_material_x_passes2SG;
+// Result: mia_material_x_passes2SG1 //
+connectAttr mia_material_x_passes2.message mia_material_x_passes2SG1.miMaterialShader;
+// Result: Connected mia_material_x_passes2.message to mia_material_x_passes2SG1.miMaterialShader. //
+connectAttr mia_material_x_passes2.message mia_material_x_passes2SG1.miPhotonShader;
+// Result: Connected mia_material_x_passes2.message to mia_material_x_passes2SG1.miPhotonShader. //
+connectAttr mia_material_x_passes2.message mia_material_x_passes2SG1.miShadowShader;
+// Result: Connected mia_material_x_passes2.message to mia_material_x_passes2SG1.miShadowShader. //
+// Result: mia_material_x_passes2 //
+setFilterScript "initialShadingGroup";
+// Result: 0 //
+setFilterScript "initialParticleSE";
+// Result: 0 //
+setFilterScript "defaultLightSet";
+// Result: 1 //
+setFilterScript "defaultObjectSet";
+// Result: 1 //
+setFilterScript "bridge_far_right_5_main:defaultMat";
+// Result: 0 //
+setFilterScript "bridge_far_right_2_pillar:defaultMat";
+// Result: 0 //
+setFilterScript "bridge_far_right_2_main:defaultMat";
+// Result: 0 //
+setFilterScript "bridge_far_right_4_pillar2:defaultMat";
+// Result: 0 //
+setFilterScript "bridge_far_right_3_main:defaultMat";
+// Result: 0 //
+setFilterScript "bridge_far_right_4_pillar1:defaultMat";
+// Result: 0 //
+setFilterScript "bridge_far_right_3_pillar:defaultMat";
+// Result: 0 //
+setFilterScript "bridge_far_right_4_main:defaultMat";
+// Result: 0 //
+setFilterScript "mia_material_x_passes1SG";
+// Result: 0 //
+setFilterScript "mia_material_x_passes1SG1";
+// Result: 0 //
+setFilterScript "mia_material_x_passes2SG";
+// Result: 0 //
+setFilterScript "mia_material_x_passes2SG1";
+// Result: 0 //
+refreshAE;
+listHistory -pdo true -lf false -il 2 "|bridge_far_right_2_main:ZBrush_defualt_group";
+listHistory -pdo true -lf false -il 2 -f true "|bridge_far_right_2_main:ZBrush_defualt_group";
+listHistory -pdo true -lf false -il 2 "|bridge_far_right_2_main:ZBrush_defualt_group|bridge_far_right_2_main:ZBrush_defualt_groupShape";
+listHistory -pdo true -lf false -il 2 -f true "|bridge_far_right_2_main:ZBrush_defualt_group|bridge_far_right_2_main:ZBrush_defualt_groupShape";
+autoUpdateAttrEd;
+listHistory -pdo true -lf false -il 2 "|bridge_far_right_2_main:ZBrush_defualt_group";
+listHistory -pdo true -lf false -il 2 -f true "|bridge_far_right_2_main:ZBrush_defualt_group";
+listHistory -pdo true -lf false -il 2 "|bridge_far_right_2_main:ZBrush_defualt_group|bridge_far_right_2_main:ZBrush_defualt_groupShape";
+listHistory -pdo true -lf false -il 2 -f true "|bridge_far_right_2_main:ZBrush_defualt_group|bridge_far_right_2_main:ZBrush_defualt_groupShape";
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+setParent MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10 //
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+AEnewBooleanGroup { "bridge_far_right_2_main:ZBrush_defualt_groupShape.miTransparencyCast" } { "Visible In Transparency" } { "" } 1;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10|formLayout44 //
+setUITemplate -ppt;
+// Result: attributeEditorTemplate //
+setParent MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10 //
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+AEnewBooleanGroup { "bridge_far_right_2_main:ZBrush_defualt_groupShape.miTransparencyReceive" } { "Transmit Transparency" } { "" } 1;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10|formLayout45 //
+setUITemplate -ppt;
+// Result: attributeEditorTemplate //
+setParent MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10 //
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+AEnewBooleanGroup { "bridge_far_right_2_main:ZBrush_defualt_groupShape.miReflectionReceive" } { "Trace Reflection" } { "" } 1;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10|formLayout46 //
+setUITemplate -ppt;
+// Result: attributeEditorTemplate //
+setParent MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10 //
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+AEnewBooleanGroup { "bridge_far_right_2_main:ZBrush_defualt_groupShape.miRefractionReceive" } { "Transmit Refraction" } { "" } 1;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10|formLayout47 //
+setUITemplate -ppt;
+// Result: attributeEditorTemplate //
+setParent MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10 //
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+AEnewBooleanGroup { "bridge_far_right_2_main:ZBrush_defualt_groupShape.miFinalGatherCast" } { "Final Gather Cast" } { "" } 1;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10|formLayout48 //
+setUITemplate -ppt;
+// Result: attributeEditorTemplate //
+setParent MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10 //
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+AEnewBooleanGroup { "bridge_far_right_2_main:ZBrush_defualt_groupShape.miFinalGatherReceive" } { "Final Gather Receive" } { "" } 1;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10|formLayout49 //
+setUITemplate -ppt;
+// Result: attributeEditorTemplate //
+setParent MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10 //
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+AEnewEnum "bridge_far_right_2_main:ZBrush_defualt_groupShape.miUpdateProxyBoundingBoxMode" "Bounding Box Update" "" {"0","Proxy and geometry bounding boxes", "1","Proxy bounding box only", "2","Geometry bounding box only", "3","None"};
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10|attrEnumOptionMenuGrp1 //
+setUITemplate -ppt;
+// Result: attributeEditorTemplate //
+setParent MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10 //
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+AEnewBooleanGroup { "bridge_far_right_2_main:ZBrush_defualt_groupShape.miOverrideSamples" } { "Anti-aliasing Sampling Override" } { "AEmentalrayOverrideObjectSamplesFlagsActive" } 1;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10|formLayout50 //
+setUITemplate -ppt;
+// Result: attributeEditorTemplate //
+setParent MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10 //
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+AEnewInt "bridge_far_right_2_main:ZBrush_defualt_groupShape.miMinSamples" "Min Sample Level" "" ;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10|attrFieldSliderGrp1 //
+setUITemplate -ppt;
+// Result: attributeEditorTemplate //
+setParent MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10 //
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+AEnewInt "bridge_far_right_2_main:ZBrush_defualt_groupShape.miMaxSamples" "Max Sample Level" "" ;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10|attrFieldSliderGrp2 //
+setUITemplate -ppt;
+// Result: attributeEditorTemplate //
+setParent MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10 //
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+AEnewBooleanGroup { "bridge_far_right_2_main:ZBrush_defualt_groupShape.miOverrideFinalGather" } { "Final Gather Override" } { "AEmentalrayOverrideFinalGatherFlagsActive" } 1;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10|formLayout51 //
+setUITemplate -ppt;
+// Result: attributeEditorTemplate //
+setParent MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10 //
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+AEnewInt "bridge_far_right_2_main:ZBrush_defualt_groupShape.miFinalGatherRays" "Final Gather Rays" "" ;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10|attrFieldSliderGrp3 //
+setUITemplate -ppt;
+// Result: attributeEditorTemplate //
+setParent MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10 //
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+AEnewFloat "bridge_far_right_2_main:ZBrush_defualt_groupShape.miFinalGatherMinRadius" "Min Radius" "" ;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10|attrFieldSliderGrp4 //
+setUITemplate -ppt;
+// Result: attributeEditorTemplate //
+setParent MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10 //
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+AEnewFloat "bridge_far_right_2_main:ZBrush_defualt_groupShape.miFinalGatherMaxRadius" "Max Radius" "" ;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10|attrFieldSliderGrp5 //
+setUITemplate -ppt;
+// Result: attributeEditorTemplate //
+setParent MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10 //
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+AEnewBooleanGroup { "bridge_far_right_2_main:ZBrush_defualt_groupShape.miFinalGatherView" } { "View (Radii in Pixel Size)" } { "" } 1;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10|formLayout52 //
+setUITemplate -ppt;
+// Result: attributeEditorTemplate //
+setParent MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10 //
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+AEnewInt "bridge_far_right_2_main:ZBrush_defualt_groupShape.miFinalGatherFilter" "Filter" "" ;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10|attrFieldSliderGrp6 //
+setUITemplate -ppt;
+// Result: attributeEditorTemplate //
+setParent MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10 //
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+AEnewBooleanGroup { "bridge_far_right_2_main:ZBrush_defualt_groupShape.miOverrideGlobalIllumination" } { "Global Illumination Override" } { "AEmentalrayOverrideGlobalIlluminationFlagsActive" } 1;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10|formLayout53 //
+setUITemplate -ppt;
+// Result: attributeEditorTemplate //
+setParent MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10 //
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+AEnewInt "bridge_far_right_2_main:ZBrush_defualt_groupShape.miGlobillumAccuracy" "Global Illum Accuracy" "" ;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10|attrFieldSliderGrp7 //
+setUITemplate -ppt;
+// Result: attributeEditorTemplate //
+setParent MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10 //
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+AEnewFloat "bridge_far_right_2_main:ZBrush_defualt_groupShape.miGlobillumRadius" "Global Illum Radius" "" ;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10|attrFieldSliderGrp8 //
+setUITemplate -ppt;
+// Result: attributeEditorTemplate //
+setParent MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10 //
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+AEnewBooleanGroup { "bridge_far_right_2_main:ZBrush_defualt_groupShape.miOverrideCaustics" } { "Caustics Override" } { "AEmentalrayOverrideCausticsFlagsActive" } 1;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10|formLayout54 //
+setUITemplate -ppt;
+// Result: attributeEditorTemplate //
+setParent MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10 //
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+AEnewInt "bridge_far_right_2_main:ZBrush_defualt_groupShape.miCausticAccuracy" "Caustic Accuracy" "" ;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10|attrFieldSliderGrp9 //
+setUITemplate -ppt;
+// Result: attributeEditorTemplate //
+setParent MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10 //
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+AEnewFloat "bridge_far_right_2_main:ZBrush_defualt_groupShape.miCausticRadius" "Caustic Radius" "" ;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10|attrFieldSliderGrp10 //
+setUITemplate -ppt;
+// Result: attributeEditorTemplate //
+setParent MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|columnLayout21;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|columnLayout21 //
+AEmakeDynRampClothCollisionInteractiveReplace( "bridge_far_right_2_main:ZBrush_defualt_groupShape.collisionOffsetVelocityMultiplier" );
+setParent MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|columnLayout22;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|columnLayout22 //
+AEmakeDynRampClothCollisionInteractiveReplace( "bridge_far_right_2_main:ZBrush_defualt_groupShape.collisionDepthVelocityMultiplier" );
+setUITemplate -ppt;
+// Result: NONE //
+updateAnimLayerEditor("AnimLayerTab");
+statusLineUpdateInputField;
+vrayUpdateAE;
+refreshAssignNewMaterialTreeLister "";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) checkMeshUseMaxSubd "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) checkMeshUseMinScreen "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) checkMeshUseMaxUv "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) checkMeshUseMinEdgeLength "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) checkMeshUseMaxEdgeLength "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) checkMeshDisplayVertices "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) checkMeshDisplayBorder "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) checkMeshDisplayUVs "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) checkMeshDisplayNormals "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) checkMeshDisplayNormals "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) checkMeshDisplayNormals "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) checkMeshAllowTopologyMod "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) checkMeshReuseTrianglesAE "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) SMPcheckUsePreviewForRender "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) checkDoubleSided "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) checkGeomAntialiasingOverride "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) checkGeomShadingSamplesOverride "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) checkGeomMaxVisSamplesOverride "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) AEmentalrayOverrideObjectSamplesFlagsActive "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+attrFieldSliderGrp -e -en false attrFieldSliderGrp1;
+// Result: attrFieldSliderGrp1 //
+attrFieldSliderGrp -e -en false attrFieldSliderGrp2;
+// Result: attrFieldSliderGrp2 //
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) AEmentalrayOverrideFinalGatherFlagsActive "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+attrFieldSliderGrp -e -en false attrFieldSliderGrp3;
+// Result: attrFieldSliderGrp3 //
+attrFieldSliderGrp -e -en false attrFieldSliderGrp4;
+// Result: attrFieldSliderGrp4 //
+attrFieldSliderGrp -e -en false attrFieldSliderGrp5;
+// Result: attrFieldSliderGrp5 //
+setParent formLayout52;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmeshFormLayout|scrollLayout2|columnLayout2|frameLayout16|columnLayout10|formLayout52 //
+checkBoxGrp -e -en1 false valueFld;
+// Result: valueFld //
+attrFieldSliderGrp -e -en false attrFieldSliderGrp6;
+// Result: attrFieldSliderGrp6 //
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) AEmentalrayOverrideGlobalIlluminationFlagsActive "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+attrFieldSliderGrp -e -en false attrFieldSliderGrp7;
+// Result: attrFieldSliderGrp7 //
+attrFieldSliderGrp -e -en false attrFieldSliderGrp8;
+// Result: attrFieldSliderGrp8 //
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) AEmentalrayOverrideCausticsFlagsActive "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+attrFieldSliderGrp -e -en false attrFieldSliderGrp9;
+// Result: attrFieldSliderGrp9 //
+attrFieldSliderGrp -e -en false attrFieldSliderGrp10;
+// Result: attrFieldSliderGrp10 //
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) AEcheckGhostControl "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+if (`objExists "bridge_far_right_2_main:ZBrush_defualt_groupShape"`) checkDrawEnabled overrideEnabled overrideDisplayType overrideLevelOfDetail overrideShading overrideTexturing overridePlayback overrideVisibility overrideColor "bridge_far_right_2_main:ZBrush_defualt_groupShape";
+showEditor mia_material_x_passes2SG;
+listConnections -source true -destination false mia_material_x_passes2SG.volumeShader;
+listConnections -source true -destination false mia_material_x_passes2SG.surfaceShader;
+listConnections -source true -destination false mia_material_x_passes2SG.miContourShader;
+listConnections -source true -destination false mia_material_x_passes2SG.miLightMapShader;
+listConnections -source true -destination false mia_material_x_passes2SG.miEnvironmentShader;
+listConnections -source true -destination false mia_material_x_passes2SG.miDisplacementShader;
+listConnections -source true -destination false mia_material_x_passes2SG.miPhotonVolumeShader;
+listConnections -source true -destination false mia_material_x_passes2SG.miPhotonShader;
+// Result: mia_material_x_passes2 //
+listConnections -source true -destination false mia_material_x_passes2SG.miVolumeShader;
+listConnections -source true -destination false mia_material_x_passes2SG.miShadowShader;
+// Result: mia_material_x_passes2 //
+listConnections -source true -destination false mia_material_x_passes2SG.miMaterialShader;
+// Result: mia_material_x_passes2 //
+vrayUpdateAE;
+exists AEshadingEngineTemplate;
+// Result: 1 //
+AEshadingEngineTemplate "mia_material_x_passes2SG";
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+columnLayout -adj true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdshadingEngineFormLayout|columnLayout23 //
+AEswatchDisplayNew mia_material_x_passes2SG( "mia_material_x_passes2SG.message" );
+scrollLayout -hst 0 -cr true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdshadingEngineFormLayout|scrollLayout3 //
+columnLayout -adj true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdshadingEngineFormLayout|scrollLayout3|columnLayout24 //
+frameLayout -collapsable true -label "Shading Group Attributes" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdshadingEngineFormLayout|scrollLayout3|columnLayout24|frameLayout20 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdshadingEngineFormLayout|scrollLayout3|columnLayout24|frameLayout20|columnLayout25 //
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+columnLayout -adj true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdshadingEngineFormLayout|scrollLayout3|columnLayout24|frameLayout20|columnLayout25|columnLayout26 //
+AEshadingEngineShadersNew( "mia_material_x_passes2SG.surfaceShader", "mia_material_x_passes2SG.volumeShader", "mia_material_x_passes2SG.imageShader", "mia_material_x_passes2SG.displacementShader", "mia_material_x_passes2SG.defaultShadows" );
+setParent ..; setParent ..;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdshadingEngineFormLayout|scrollLayout3|columnLayout24 //
+setUITemplate -ppt;
+// Result: attributeEditorTemplate //
+frameLayout -collapsable true -label "mental ray" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdshadingEngineFormLayout|scrollLayout3|columnLayout24|frameLayout21 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdshadingEngineFormLayout|scrollLayout3|columnLayout24|frameLayout21|columnLayout27 //
+frameLayout -collapsable true -label "Node Behavior" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdshadingEngineFormLayout|scrollLayout3|columnLayout24|frameLayout22 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdshadingEngineFormLayout|scrollLayout3|columnLayout24|frameLayout22|columnLayout28 //
+frameLayout -collapsable true -label "Extra Attributes" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdshadingEngineFormLayout|scrollLayout3|columnLayout24|frameLayout23 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdshadingEngineFormLayout|scrollLayout3|columnLayout24|frameLayout23|columnLayout29 //
+setParent ..; setParent ..;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdshadingEngineFormLayout //
+setUITemplate -ppt;
+// Result: NONE //
+setFilterScript "initialShadingGroup";
+// Result: 0 //
+setFilterScript "initialParticleSE";
+// Result: 0 //
+setFilterScript "defaultLightSet";
+// Result: 1 //
+setFilterScript "defaultObjectSet";
+// Result: 1 //
+setFilterScript "bridge_far_right_5_main:defaultMat";
+// Result: 0 //
+setFilterScript "bridge_far_right_2_pillar:defaultMat";
+// Result: 0 //
+setFilterScript "bridge_far_right_2_main:defaultMat";
+// Result: 0 //
+setFilterScript "bridge_far_right_4_pillar2:defaultMat";
+// Result: 0 //
+setFilterScript "bridge_far_right_3_main:defaultMat";
+// Result: 0 //
+setFilterScript "bridge_far_right_4_pillar1:defaultMat";
+// Result: 0 //
+setFilterScript "bridge_far_right_3_pillar:defaultMat";
+// Result: 0 //
+setFilterScript "bridge_far_right_4_main:defaultMat";
+// Result: 0 //
+setFilterScript "mia_material_x_passes1SG";
+// Result: 0 //
+setFilterScript "mia_material_x_passes1SG1";
+// Result: 0 //
+setFilterScript "mia_material_x_passes2SG";
+// Result: 0 //
+setFilterScript "mia_material_x_passes2SG1";
+// Result: 0 //
+if (`objExists "mia_material_x_passes2SG"`) AEmentalrayMaterialContourUpdate "mia_material_x_passes2SG";
+vrayUpdateAEJob;
+vrayUpdateAEJob;
+vrayUpdateAE;
+AEbuildControls;
+exists AEmia_material_x_passesTemplate;
+// Result: 1 //
+AEmia_material_x_passesTemplate "mia_material_x_passes2";
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+columnLayout -adj true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|columnLayout30 //
+AEswatchDisplayNew mia_material_x_passes2( "mia_material_x_passes2.message" );
+scrollLayout -hst 0 -cr true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4 //
+columnLayout -adj true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31 //
+AEnewBooleanGroup { "mia_material_x_passes2.multiple_outputs" } { "Multiple Outputs" } { "" } 1;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|formLayout55 //
+frameLayout -collapsable true -label "Diffuse" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout24 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout24|columnLayout32 //
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+AEnewColor "mia_material_x_passes2.diffuse" "Color" "" ;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout24|columnLayout32|attrColorSliderGrp1 //
+AEnewFloat "mia_material_x_passes2.diffuse_weight" "Weight" "" ;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout24|columnLayout32|attrFieldSliderGrp11 //
+AEnewFloat "mia_material_x_passes2.diffuse_roughness" "Roughness" "" ;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout24|columnLayout32|attrFieldSliderGrp12 //
+setParent ..; setParent ..;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31 //
+setUITemplate -ppt;
+// Result: attributeEditorTemplate //
+frameLayout -collapsable true -label "Reflection" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout25 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout25|columnLayout33 //
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+AEnewColor "mia_material_x_passes2.refl_color" "Color" "" ;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout25|columnLayout33|attrColorSliderGrp2 //
+AEnewFloat "mia_material_x_passes2.reflectivity" "Reflectivity" "" ;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout25|columnLayout33|attrFieldSliderGrp13 //
+AEnewFloat "mia_material_x_passes2.refl_gloss" "Glossiness" "AEmiaCheckReflectGlossiness" ;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout25|columnLayout33|attrFieldSliderGrp14 //
+AEnewInt "mia_material_x_passes2.refl_gloss_samples" "Glossy Samples" "" ;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout25|columnLayout33|attrFieldSliderGrp15 //
+AEnewBooleanGroup { "mia_material_x_passes2.refl_hl_only" } { "Highlights Only" } { "" } 1;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout25|columnLayout33|formLayout56 //
+AEnewBooleanGroup { "mia_material_x_passes2.refl_is_metal" } { "Metal Material" } { "" } 1;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout25|columnLayout33|formLayout57 //
+frameLayout -collapsable true -label "Advanced Reflection" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout25|columnLayout33|frameLayout26 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout25|columnLayout33|frameLayout26|columnLayout34 //
+setParent ..; setParent ..;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31 //
+setUITemplate -ppt;
+// Result: attributeEditorTemplate //
+frameLayout -collapsable true -label "Refraction" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout27 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout27|columnLayout35 //
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+AEnewFloat "mia_material_x_passes2.refr_ior" "Index of Refraction" "" ;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout27|columnLayout35|attrFieldSliderGrp16 //
+AEnewColor "mia_material_x_passes2.refr_color" "Color" "" ;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout27|columnLayout35|attrColorSliderGrp3 //
+AEnewFloat "mia_material_x_passes2.transparency" "Transparency" "" ;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout27|columnLayout35|attrFieldSliderGrp17 //
+AEnewFloat "mia_material_x_passes2.refr_gloss" "Glossiness" "AEmiaCheckRefractGlossiness" ;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout27|columnLayout35|attrFieldSliderGrp18 //
+AEnewInt "mia_material_x_passes2.refr_gloss_samples" "Glossy Samples" "" ;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout27|columnLayout35|attrFieldSliderGrp19 //
+frameLayout -collapsable true -label "Advanced Refraction" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout27|columnLayout35|frameLayout28 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout27|columnLayout35|frameLayout28|columnLayout36 //
+setParent ..; setParent ..;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31 //
+setUITemplate -ppt;
+// Result: attributeEditorTemplate //
+frameLayout -collapsable true -label "Anisotropy" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout29 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout29|columnLayout37 //
+frameLayout -collapsable true -label "BRDF" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout30 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout30|columnLayout38 //
+frameLayout -collapsable true -label "Translucency" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout31 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout31|columnLayout39 //
+frameLayout -collapsable true -label "Indirect Illumination Options" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout32 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout32|columnLayout40 //
+frameLayout -collapsable true -label "Ambient Occlusion" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout33 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout33|columnLayout41 //
+frameLayout -collapsable true -label "Interpolation" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout34 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout34|columnLayout42 //
+frameLayout -collapsable true -label "Bump" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout35 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout35|columnLayout43 //
+frameLayout -collapsable true -label "Advanced" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout36 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout36|columnLayout44 //
+frameLayout -collapsable true -label "Frame Buffer Contribution" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout37 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout37|columnLayout45 //
+frameLayout -collapsable true -label "Light Linking" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout38 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout38|columnLayout46 //
+frameLayout -collapsable true -label "Hardware Texturing" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout39 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout39|columnLayout47 //
+frameLayout -collapsable true -label "Extra Attributes" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout40 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout40|columnLayout48 //
+setParent ..; setParent ..;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout //
+setUITemplate -ppt;
+// Result: NONE //
+workspace -q -rte images;
+// Result: images //
+file -q -exn;
+// Result: E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_far_right_group/export/bridge_far_right_group.ma //
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckReflectGlossiness "mia_material_x_passes2";
+attrFieldSliderGrp -e -en false attrFieldSliderGrp15;
+// Result: attrFieldSliderGrp15 //
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckReflectFalloff "mia_material_x_passes2";
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckReflectFalloff "mia_material_x_passes2";
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckRefractGlossiness "mia_material_x_passes2";
+attrFieldSliderGrp -e -en false attrFieldSliderGrp19;
+// Result: attrFieldSliderGrp19 //
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckRefractFalloff "mia_material_x_passes2";
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckRefractFalloff "mia_material_x_passes2";
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckAnisotropy "mia_material_x_passes2";
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckUseFresnel "mia_material_x_passes2";
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckUseTranslucency "mia_material_x_passes2";
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckUseAO "mia_material_x_passes2";
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckIntrRefl "mia_material_x_passes2";
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckIntrRefl "mia_material_x_passes2";
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckIntrRefl "mia_material_x_passes2";
+vrayUpdateAEJob;
+defaultNavigation -createNew -destination "mia_material_x_passes2.diffuse";
+createNewOverride("mia_material_x_passes2.diffuse", true);
+// Result: 1 //
+createRenderNode -allWithTexturesUp "defaultNavigation -force true -connectToExisting -source %node -destination mia_material_x_passes2.diffuse" "";
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("Maya/Surface/VRay Blend Mtl","VRayBlendMtl")
+_fav.addPath("Maya/Surface/VRay Bump Mtl","VRayBumpMtl")
+_fav.addPath("Maya/Surface/VRay Car Paint Mtl","VRayCarPaintMtl")
+_fav.addPath("Maya/Surface/VRay Fast SSS2","VRayFastSSS2")
+_fav.addPath("Maya/Surface/VRay Light Mtl","VRayLightMtl")
+_fav.addPath("Maya/Surface/VRay Mesh Material","VRayMeshMaterial")
+_fav.addPath("Maya/Surface/VRay Mtl","VRayMtl")
+_fav.addPath("Maya/Surface/VRay Mtl 2Sided","VRayMtl2Sided")
+_fav.addPath("Maya/Surface/VRay Mtl Wrapper","VRayMtlWrapper")
+_fav.addPath("Maya/Surface/VRay Plugin Node Mtl","VRayPluginNodeMtl")
+_fav.addPath("Maya/Surface/VRay Simbiont","VRaySimbiont")
+_fav.addPath("Maya/Surface/Anisotropic","anisotropic")
+_fav.addPath("Maya/Surface/Blinn","blinn")
+_fav.addPath("Maya/Surface/Hair Tube Shader","hairTubeShader")
+_fav.addPath("Maya/Surface/Lambert","lambert")
+_fav.addPath("Maya/Surface/Layered Shader","layeredShader")
+_fav.addPath("Maya/Surface/Ocean Shader","oceanShader")
+_fav.addPath("Maya/Surface/Phong","phong")
+_fav.addPath("Maya/Surface/Phong E","phongE")
+_fav.addPath("Maya/Surface/Ramp Shader","rampShader")
+_fav.addPath("Maya/Surface/Shading Map","shadingMap")
+_fav.addPath("Maya/Surface/Surface Shader","surfaceShader")
+_fav.addPath("Maya/Surface/Use Background","useBackground")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("Maya/Volumetric/VRay Environment Fog","VRayEnvironmentFog")
+_fav.addPath("Maya/Volumetric/VRay Scatter Fog","VRayScatterFog")
+_fav.addPath("Maya/Volumetric/VRay Simple Fog","VRaySimpleFog")
+_fav.addPath("Maya/Volumetric/VRay Sphere Fade Volume","VRaySphereFadeVolume")
+_fav.addPath("Maya/Volumetric/Env Fog","envFog")
+_fav.addPath("Maya/Volumetric/Fluid Shape","fluidShape")
+_fav.addPath("Maya/Volumetric/Light Fog","lightFog")
+_fav.addPath("Maya/Volumetric/Particle Cloud","particleCloud")
+_fav.addPath("Maya/Volumetric/Volume Fog","volumeFog")
+_fav.addPath("Maya/Volumetric/Volume Shader","volumeShader")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("Maya/Displacement/Displacement","displacementShader")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("Maya/2D Textures/VRay Dirt","VRayDirt")
+_fav.addPath("Maya/2D Textures/VRay Edges","VRayEdges")
+_fav.addPath("Maya/2D Textures/VRay Fresnel","VRayFresnel")
+_fav.addPath("Maya/2D Textures/VRay Vertex Colors","VRayVertexColors")
+_fav.addPath("Maya/2D Textures/VRay Water","VRayWater")
+_fav.addPath("Maya/2D Textures/Bulge","bulge")
+_fav.addPath("Maya/2D Textures/Checker","checker")
+_fav.addPath("Maya/2D Textures/Cloth","cloth")
+_fav.addPath("Maya/2D Textures/File","file")
+_fav.addPath("Maya/2D Textures/Fluid Texture 2D","fluidTexture2D")
+_fav.addPath("Maya/2D Textures/Fractal","fractal")
+_fav.addPath("Maya/2D Textures/Grid","grid")
+_fav.addPath("Maya/2D Textures/Mountain","mountain")
+_fav.addPath("Maya/2D Textures/Movie","movie")
+_fav.addPath("Maya/2D Textures/Noise","noise")
+_fav.addPath("Maya/2D Textures/Ocean","ocean")
+_fav.addPath("Maya/2D Textures/PSD File","psdFileTex")
+_fav.addPath("Maya/2D Textures/Ramp","ramp")
+_fav.addPath("Maya/2D Textures/Water","water")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("Maya/3D Textures/Brownian","brownian")
+_fav.addPath("Maya/3D Textures/Cloud","cloud")
+_fav.addPath("Maya/3D Textures/Crater","crater")
+_fav.addPath("Maya/3D Textures/Fluid Texture 3D","fluidTexture3D")
+_fav.addPath("Maya/3D Textures/Granite","granite")
+_fav.addPath("Maya/3D Textures/Leather","leather")
+_fav.addPath("Maya/3D Textures/Marble","marble")
+_fav.addPath("Maya/3D Textures/Rock","rock")
+_fav.addPath("Maya/3D Textures/Snow","snow")
+_fav.addPath("Maya/3D Textures/Solid Fractal","solidFractal")
+_fav.addPath("Maya/3D Textures/Stucco","stucco")
+_fav.addPath("Maya/3D Textures/Volume Noise","volumeNoise")
+_fav.addPath("Maya/3D Textures/Wood","wood")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("Maya/Env Textures/VRay Sky","VRaySky")
+_fav.addPath("Maya/Env Textures/Env Ball","envBall")
+_fav.addPath("Maya/Env Textures/Env Chrome","envChrome")
+_fav.addPath("Maya/Env Textures/Env Cube","envCube")
+_fav.addPath("Maya/Env Textures/Env Sky","envSky")
+_fav.addPath("Maya/Env Textures/Env Sphere","envSphere")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("Maya/Other Textures/VRay Ptex","VRayPtex")
+_fav.addPath("Maya/Other Textures/Layered Texture","layeredTexture")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("Maya/Lights/VRay Light Dome Shape","VRayLightDomeShape")
+_fav.addPath("Maya/Lights/VRay Light IESShape","VRayLightIESShape")
+_fav.addPath("Maya/Lights/VRay Light Rect Shape","VRayLightRectShape")
+_fav.addPath("Maya/Lights/VRay Light Sphere Shape","VRayLightSphereShape")
+_fav.addPath("Maya/Lights/VRay Sun Shape","VRaySunShape")
+_fav.addPath("Maya/Lights/Ambient Light","ambientLight")
+_fav.addPath("Maya/Lights/Area Light","areaLight")
+_fav.addPath("Maya/Lights/Directional Light","directionalLight")
+_fav.addPath("Maya/Lights/Point Light","pointLight")
+_fav.addPath("Maya/Lights/Spot Light","spotLight")
+_fav.addPath("Maya/Lights/Volume Light","volumeLight")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("Maya/Utilities/VRay Fur Sampler","VRayFurSampler")
+_fav.addPath("Maya/Utilities/VRay Object Properties","VRayObjectProperties")
+_fav.addPath("Maya/Utilities/VRay Place Env Tex","VRayPlaceEnvTex")
+_fav.addPath("Maya/Utilities/VRay Render Element Set","VRayRenderElementSet")
+_fav.addPath("Maya/Utilities/VRay Sh Info","VRayShInfo")
+_fav.addPath("Maya/Utilities/VRay Switch Transform","VRaySwitchTransform")
+_fav.addPath("Maya/Utilities/Add Double Linear","addDoubleLinear")
+_fav.addPath("Maya/Utilities/Add Matrix","addMatrix")
+_fav.addPath("Maya/Utilities/Angle Between","angleBetween")
+_fav.addPath("Maya/Utilities/Array Mapper","arrayMapper")
+_fav.addPath("Maya/Utilities/Blend Colors","blendColors")
+_fav.addPath("Maya/Utilities/Blend Two Attr","blendTwoAttr")
+_fav.addPath("Maya/Utilities/Bump 2d","bump2d")
+_fav.addPath("Maya/Utilities/Bump 3d","bump3d")
+_fav.addPath("Maya/Utilities/Choice","choice")
+_fav.addPath("Maya/Utilities/Chooser","chooser")
+_fav.addPath("Maya/Utilities/Clamp","clamp")
+_fav.addPath("Maya/Utilities/Color Profile","colorProfile")
+_fav.addPath("Maya/Utilities/Condition","condition")
+_fav.addPath("Maya/Utilities/Contrast","contrast")
+_fav.addPath("Maya/Utilities/Curve Info","curveInfo")
+_fav.addPath("Maya/Utilities/Distance Between","distanceBetween")
+_fav.addPath("Maya/Utilities/Double Switch","doubleShadingSwitch")
+_fav.addPath("Maya/Utilities/Frame Cache","frameCache")
+_fav.addPath("Maya/Utilities/Gamma Correct","gammaCorrect")
+_fav.addPath("Maya/Utilities/Height Field","heightField")
+_fav.addPath("Maya/Utilities/Hsv To Rgb","hsvToRgb")
+_fav.addPath("Maya/Utilities/Light Info","lightInfo")
+_fav.addPath("Maya/Utilities/Luminance","luminance")
+_fav.addPath("Maya/Utilities/Mult Double Linear","multDoubleLinear")
+_fav.addPath("Maya/Utilities/Multiply Divide","multiplyDivide")
+_fav.addPath("Maya/Utilities/Particle Sampler","particleSamplerInfo")
+_fav.addPath("Maya/Utilities/2d Placement","place2dTexture")
+_fav.addPath("Maya/Utilities/3d Placement","place3dTexture")
+_fav.addPath("Maya/Utilities/+|- Average","plusMinusAverage")
+_fav.addPath("Maya/Utilities/Projection","projection")
+_fav.addPath("Maya/Utilities/Quad Switch","quadShadingSwitch")
+_fav.addPath("Maya/Utilities/Remap Color","remapColor")
+_fav.addPath("Maya/Utilities/Remap Hsv","remapHsv")
+_fav.addPath("Maya/Utilities/Remap Value","remapValue")
+_fav.addPath("Maya/Utilities/Reverse","reverse")
+_fav.addPath("Maya/Utilities/Rgb To Hsv","rgbToHsv")
+_fav.addPath("Maya/Utilities/Sampler Info","samplerInfo")
+_fav.addPath("Maya/Utilities/Set Range","setRange")
+_fav.addPath("Maya/Utilities/Single Switch","singleShadingSwitch")
+_fav.addPath("Maya/Utilities/Smear","smear")
+_fav.addPath("Maya/Utilities/Stencil","stencil")
+_fav.addPath("Maya/Utilities/Studio Clear Coat","studioClearCoat")
+_fav.addPath("Maya/Utilities/Surface Info","surfaceInfo")
+_fav.addPath("Maya/Utilities/Surf. Luminance","surfaceLuminance")
+_fav.addPath("Maya/Utilities/Triple Switch","tripleShadingSwitch")
+_fav.addPath("Maya/Utilities/Unit Conversion","unitConversion")
+_fav.addPath("Maya/Utilities/Uv Chooser","uvChooser")
+_fav.addPath("Maya/Utilities/Vector Product","vectorProduct")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("Maya/Image Planes/Image Plane","imagePlane")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("Maya/Glow/Optical FX","opticalFX")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("Maya/Rendering/Render Layer","renderLayer")
+_fav.addPath("Maya/Rendering/Render Pass","renderPass")
+_fav.addPath("Maya/Rendering/Render Target","renderTarget")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/Materials/dgs_material","dgs_material")
+_fav.addPath("mental ray/Materials/dielectric_material","dielectric_material")
+_fav.addPath("mental ray/Materials/mi_car_paint_phen","mi_car_paint_phen")
+_fav.addPath("mental ray/Materials/mi_car_paint_phen_x","mi_car_paint_phen_x")
+_fav.addPath("mental ray/Materials/mi_car_paint_phen_x_passes","mi_car_paint_phen_x_passes")
+_fav.addPath("mental ray/Materials/mi_metallic_paint","mi_metallic_paint")
+_fav.addPath("mental ray/Materials/mi_metallic_paint_x","mi_metallic_paint_x")
+_fav.addPath("mental ray/Materials/mi_metallic_paint_x_passes","mi_metallic_paint_x_passes")
+_fav.addPath("mental ray/Materials/mia_material","mia_material")
+_fav.addPath("mental ray/Materials/mia_material_x","mia_material_x")
+_fav.addPath("mental ray/Materials/mia_material_x_passes","mia_material_x_passes")
+_fav.addPath("mental ray/Materials/mib_glossy_reflection","mib_glossy_reflection")
+_fav.addPath("mental ray/Materials/mib_glossy_refraction","mib_glossy_refraction")
+_fav.addPath("mental ray/Materials/mib_illum_blinn","mib_illum_blinn")
+_fav.addPath("mental ray/Materials/mib_illum_cooktorr","mib_illum_cooktorr")
+_fav.addPath("mental ray/Materials/mib_illum_hair","mib_illum_hair")
+_fav.addPath("mental ray/Materials/mib_illum_lambert","mib_illum_lambert")
+_fav.addPath("mental ray/Materials/mib_illum_phong","mib_illum_phong")
+_fav.addPath("mental ray/Materials/mib_illum_ward","mib_illum_ward")
+_fav.addPath("mental ray/Materials/mib_illum_ward_deriv","mib_illum_ward_deriv")
+_fav.addPath("mental ray/Materials/misss_call_shader","misss_call_shader")
+_fav.addPath("mental ray/Materials/misss_fast_shader","misss_fast_shader")
+_fav.addPath("mental ray/Materials/misss_fast_shader_x","misss_fast_shader_x")
+_fav.addPath("mental ray/Materials/misss_fast_shader_x_passes","misss_fast_shader_x_passes")
+_fav.addPath("mental ray/Materials/misss_fast_simple_maya","misss_fast_simple_maya")
+_fav.addPath("mental ray/Materials/misss_fast_skin_maya","misss_fast_skin_maya")
+_fav.addPath("mental ray/Materials/misss_physical","misss_physical")
+_fav.addPath("mental ray/Materials/misss_set_normal","misss_set_normal")
+_fav.addPath("mental ray/Materials/misss_skin_specular","misss_skin_specular")
+_fav.addPath("mental ray/Materials/path_material","path_material")
+_fav.addPath("mental ray/Materials/transmat","transmat")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/Shadow Shaders/mib_shadow_transparency","mib_shadow_transparency")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/Volumetric Materials/mib_ray_marcher","mib_ray_marcher")
+_fav.addPath("mental ray/Volumetric Materials/mib_volume","mib_volume")
+_fav.addPath("mental ray/Volumetric Materials/parti_volume","parti_volume")
+del _fav
+import maya.app.general.tlfavorites as _fav
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/Photonic Materials/dgs_material_photon","dgs_material_photon")
+_fav.addPath("mental ray/Photonic Materials/dielectric_material_photon","dielectric_material_photon")
+_fav.addPath("mental ray/Photonic Materials/mib_photon_basic","mib_photon_basic")
+_fav.addPath("mental ray/Photonic Materials/transmat_photon","transmat_photon")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/Photon Volumetric Materials/parti_volume_photon","parti_volume_photon")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/Textures/mentalrayTexture","mentalrayTexture")
+_fav.addPath("mental ray/Textures/mentalrayVertexColors","mentalrayVertexColors")
+_fav.addPath("mental ray/Textures/mi_bump_flakes","mi_bump_flakes")
+_fav.addPath("mental ray/Textures/mia_light_surface","mia_light_surface")
+_fav.addPath("mental ray/Textures/mia_roundcorners","mia_roundcorners")
+_fav.addPath("mental ray/Textures/mib_amb_occlusion","mib_amb_occlusion")
+_fav.addPath("mental ray/Textures/mib_bent_normal_env","mib_bent_normal_env")
+_fav.addPath("mental ray/Textures/mib_bump_basis","mib_bump_basis")
+_fav.addPath("mental ray/Textures/mib_bump_map","mib_bump_map")
+_fav.addPath("mental ray/Textures/mib_bump_map2","mib_bump_map2")
+_fav.addPath("mental ray/Textures/mib_fast_occlusion","mib_fast_occlusion")
+_fav.addPath("mental ray/Textures/mib_passthrough_bump_map","mib_passthrough_bump_map")
+_fav.addPath("mental ray/Textures/mib_texture_checkerboard","mib_texture_checkerboard")
+_fav.addPath("mental ray/Textures/mib_texture_filter_lookup","mib_texture_filter_lookup")
+_fav.addPath("mental ray/Textures/mib_texture_lookup","mib_texture_lookup")
+_fav.addPath("mental ray/Textures/mib_texture_lookup2","mib_texture_lookup2")
+_fav.addPath("mental ray/Textures/mib_texture_polkadot","mib_texture_polkadot")
+_fav.addPath("mental ray/Textures/mib_texture_polkasphere","mib_texture_polkasphere")
+_fav.addPath("mental ray/Textures/mib_texture_remap","mib_texture_remap")
+_fav.addPath("mental ray/Textures/mib_texture_rotate","mib_texture_rotate")
+_fav.addPath("mental ray/Textures/mib_texture_turbulence","mib_texture_turbulence")
+_fav.addPath("mental ray/Textures/mib_texture_vector","mib_texture_vector")
+_fav.addPath("mental ray/Textures/mib_texture_wave","mib_texture_wave")
+_fav.addPath("mental ray/Textures/misss_lambert_gamma","misss_lambert_gamma")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/Environments/mia_ciesky","mia_ciesky")
+_fav.addPath("mental ray/Environments/mia_envblur","mia_envblur")
+_fav.addPath("mental ray/Environments/mib_lookup_cube1","mib_lookup_cube1")
+_fav.addPath("mental ray/Environments/mib_lookup_cube6","mib_lookup_cube6")
+_fav.addPath("mental ray/Environments/mib_lookup_cylindrical","mib_lookup_cylindrical")
+_fav.addPath("mental ray/Environments/mib_lookup_spherical","mib_lookup_spherical")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/MentalRay Lights/mia_photometric_light","mia_photometric_light")
+_fav.addPath("mental ray/MentalRay Lights/mia_physicalsun","mia_physicalsun")
+_fav.addPath("mental ray/MentalRay Lights/mia_portal_light","mia_portal_light")
+_fav.addPath("mental ray/MentalRay Lights/mib_blackbody","mib_blackbody")
+_fav.addPath("mental ray/MentalRay Lights/mib_cie_d","mib_cie_d")
+_fav.addPath("mental ray/MentalRay Lights/mib_fg_occlusion","mib_fg_occlusion")
+_fav.addPath("mental ray/MentalRay Lights/mib_light_infinite","mib_light_infinite")
+_fav.addPath("mental ray/MentalRay Lights/mib_light_photometric","mib_light_photometric")
+_fav.addPath("mental ray/MentalRay Lights/mib_light_point","mib_light_point")
+_fav.addPath("mental ray/MentalRay Lights/mib_light_spot","mib_light_spot")
+_fav.addPath("mental ray/MentalRay Lights/physical_light","physical_light")
+del _fav
+import maya.app.general.tlfavorites as _fav
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/Light Maps/mib_lightmap_sample","mib_lightmap_sample")
+_fav.addPath("mental ray/Light Maps/mib_lightmap_write","mib_lightmap_write")
+_fav.addPath("mental ray/Light Maps/misss_fast_lmap_maya","misss_fast_lmap_maya")
+_fav.addPath("mental ray/Light Maps/misss_lightmap_write","misss_lightmap_write")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/Lenses/mia_exposure_photographic","mia_exposure_photographic")
+_fav.addPath("mental ray/Lenses/mia_exposure_simple","mia_exposure_simple")
+_fav.addPath("mental ray/Lenses/mia_lens_bokeh","mia_lens_bokeh")
+_fav.addPath("mental ray/Lenses/mia_physicalsky","mia_physicalsky")
+_fav.addPath("mental ray/Lenses/mib_lens_clamp","mib_lens_clamp")
+_fav.addPath("mental ray/Lenses/mib_lens_stencil","mib_lens_stencil")
+_fav.addPath("mental ray/Lenses/mib_lookup_background","mib_lookup_background")
+_fav.addPath("mental ray/Lenses/oversampling_lens","oversampling_lens")
+_fav.addPath("mental ray/Lenses/physical_lens_dof","physical_lens_dof")
+del _fav
+import maya.app.general.tlfavorites as _fav
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/Geometry/mib_geo_add_uv_texsurf","mib_geo_add_uv_texsurf")
+_fav.addPath("mental ray/Geometry/mib_geo_cone","mib_geo_cone")
+_fav.addPath("mental ray/Geometry/mib_geo_cube","mib_geo_cube")
+_fav.addPath("mental ray/Geometry/mib_geo_cylinder","mib_geo_cylinder")
+_fav.addPath("mental ray/Geometry/mib_geo_instance","mib_geo_instance")
+_fav.addPath("mental ray/Geometry/mib_geo_instance_mlist","mib_geo_instance_mlist")
+_fav.addPath("mental ray/Geometry/mib_geo_sphere","mib_geo_sphere")
+_fav.addPath("mental ray/Geometry/mib_geo_square","mib_geo_square")
+_fav.addPath("mental ray/Geometry/mib_geo_torus","mib_geo_torus")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/Contour Store/contour_store_function","contour_store_function")
+_fav.addPath("mental ray/Contour Store/contour_store_function_simple","contour_store_function_simple")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/Contour Contrast/contour_contrast_function_levels","contour_contrast_function_levels")
+_fav.addPath("mental ray/Contour Contrast/contour_contrast_function_simple","contour_contrast_function_simple")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/Contour Shader/contour_shader_combi","contour_shader_combi")
+_fav.addPath("mental ray/Contour Shader/contour_shader_curvature","contour_shader_curvature")
+_fav.addPath("mental ray/Contour Shader/contour_shader_depthfade","contour_shader_depthfade")
+_fav.addPath("mental ray/Contour Shader/contour_shader_factorcolor","contour_shader_factorcolor")
+_fav.addPath("mental ray/Contour Shader/contour_shader_framefade","contour_shader_framefade")
+_fav.addPath("mental ray/Contour Shader/contour_shader_layerthinner","contour_shader_layerthinner")
+_fav.addPath("mental ray/Contour Shader/contour_shader_maxcolor","contour_shader_maxcolor")
+_fav.addPath("mental ray/Contour Shader/contour_shader_silhouette","contour_shader_silhouette")
+_fav.addPath("mental ray/Contour Shader/contour_shader_simple","contour_shader_simple")
+_fav.addPath("mental ray/Contour Shader/contour_shader_widthfromcolor","contour_shader_widthfromcolor")
+_fav.addPath("mental ray/Contour Shader/contour_shader_widthfromlight","contour_shader_widthfromlight")
+_fav.addPath("mental ray/Contour Shader/contour_shader_widthfromlightdir","contour_shader_widthfromlightdir")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/Contour Output/contour_composite","contour_composite")
+_fav.addPath("mental ray/Contour Output/contour_only","contour_only")
+_fav.addPath("mental ray/Contour Output/contour_ps","contour_ps")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/Sample Compositing/mib_continue","mib_continue")
+_fav.addPath("mental ray/Sample Compositing/mib_dielectric","mib_dielectric")
+_fav.addPath("mental ray/Sample Compositing/mib_opacity","mib_opacity")
+_fav.addPath("mental ray/Sample Compositing/mib_reflect","mib_reflect")
+_fav.addPath("mental ray/Sample Compositing/mib_refract","mib_refract")
+_fav.addPath("mental ray/Sample Compositing/mib_refraction_index","mib_refraction_index")
+_fav.addPath("mental ray/Sample Compositing/mib_transparency","mib_transparency")
+_fav.addPath("mental ray/Sample Compositing/mib_twosided","mib_twosided")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/Data Conversion/mib_color_alpha","mib_color_alpha")
+_fav.addPath("mental ray/Data Conversion/mib_color_average","mib_color_average")
+_fav.addPath("mental ray/Data Conversion/mib_color_intensity","mib_color_intensity")
+_fav.addPath("mental ray/Data Conversion/mib_color_interpolate","mib_color_interpolate")
+_fav.addPath("mental ray/Data Conversion/mib_color_mix","mib_color_mix")
+_fav.addPath("mental ray/Data Conversion/mib_color_spread","mib_color_spread")
+del _fav
+import maya.app.general.tlfavorites as _fav
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/Miscellaneous/mentalrayPhenomenon","mentalrayPhenomenon")
+_fav.addPath("mental ray/Miscellaneous/writeToColorBuffer","writeToColorBuffer")
+_fav.addPath("mental ray/Miscellaneous/writeToDepthBuffer","writeToDepthBuffer")
+_fav.addPath("mental ray/Miscellaneous/writeToLabelBuffer","writeToLabelBuffer")
+_fav.addPath("mental ray/Miscellaneous/writeToVectorBuffer","writeToVectorBuffer")
+del _fav
+import maya.app.general.tlfavorites as _fav;_fav.attachStore('createRenderNodeWindow|creationWindowForm|nodeTreeLister2',"C:/Users/Yinglei/Documents/maya/2012-x64/prefs/renderNodeTypeFavorites");del _fav
+# Result: <maya.app.general.tlfavorites.TLFavoriteStore object at 0x000000002C5DDC18> #
+defaultNavigation -defaultTraversal -destination "mia_material_x_passes2.diffuse";
+createRenderNodeCB -as2DTexture "" file "defaultNavigation -force true -connectToExisting -source %node -destination mia_material_x_passes2.diffuse; window -e -vis false createRenderNodeWindow;";
+shadingNode -asTexture file;
+// Result: file3 //
+shadingNode -asUtility place2dTexture;
+// Result: place2dTexture3 //
+connectAttr -f place2dTexture3.coverage file3.coverage;
+// Result: Connected place2dTexture3.coverage to file3.coverage. //
+connectAttr -f place2dTexture3.translateFrame file3.translateFrame;
+// Result: Connected place2dTexture3.translateFrame to file3.translateFrame. //
+connectAttr -f place2dTexture3.rotateFrame file3.rotateFrame;
+// Result: Connected place2dTexture3.rotateFrame to file3.rotateFrame. //
+connectAttr -f place2dTexture3.mirrorU file3.mirrorU;
+// Result: Connected place2dTexture3.mirrorU to file3.mirrorU. //
+connectAttr -f place2dTexture3.mirrorV file3.mirrorV;
+// Result: Connected place2dTexture3.mirrorV to file3.mirrorV. //
+connectAttr -f place2dTexture3.stagger file3.stagger;
+// Result: Connected place2dTexture3.stagger to file3.stagger. //
+connectAttr -f place2dTexture3.wrapU file3.wrapU;
+// Result: Connected place2dTexture3.wrapU to file3.wrapU. //
+connectAttr -f place2dTexture3.wrapV file3.wrapV;
+// Result: Connected place2dTexture3.wrapV to file3.wrapV. //
+connectAttr -f place2dTexture3.repeatUV file3.repeatUV;
+// Result: Connected place2dTexture3.repeatUV to file3.repeatUV. //
+connectAttr -f place2dTexture3.offset file3.offset;
+// Result: Connected place2dTexture3.offset to file3.offset. //
+connectAttr -f place2dTexture3.rotateUV file3.rotateUV;
+// Result: Connected place2dTexture3.rotateUV to file3.rotateUV. //
+connectAttr -f place2dTexture3.noiseUV file3.noiseUV;
+// Result: Connected place2dTexture3.noiseUV to file3.noiseUV. //
+connectAttr -f place2dTexture3.vertexUvOne file3.vertexUvOne;
+// Result: Connected place2dTexture3.vertexUvOne to file3.vertexUvOne. //
+connectAttr -f place2dTexture3.vertexUvTwo file3.vertexUvTwo;
+// Result: Connected place2dTexture3.vertexUvTwo to file3.vertexUvTwo. //
+connectAttr -f place2dTexture3.vertexUvThree file3.vertexUvThree;
+// Result: Connected place2dTexture3.vertexUvThree to file3.vertexUvThree. //
+connectAttr -f place2dTexture3.vertexCameraOne file3.vertexCameraOne;
+// Result: Connected place2dTexture3.vertexCameraOne to file3.vertexCameraOne. //
+connectAttr place2dTexture3.outUV file3.uv;
+// Result: Connected place2dTexture3.outUV to file3.uvCoord. //
+connectAttr place2dTexture3.outUvFilterSize file3.uvFilterSize;
+// Result: Connected place2dTexture3.outUvFilterSize to file3.uvFilterSize. //
+defaultNavigation -force true -connectToExisting -source file3 -destination mia_material_x_passes2.diffuse; window -e -vis false createRenderNodeWindow;
+connectNodeToAttrOverride("file3", "mia_material_x_passes2.diffuse");
+// Result: 1 //
+connectAttr -f file3.outColor mia_material_x_passes2.diffuse;
+// Result: Connected file3.outColor to mia_material_x_passes2.diffuse. //
+connectAttr -f file3.outAlpha mia_material_x_passes2.diffuseA;
+// Result: Connected file3.outAlpha to mia_material_x_passes2.diffuseA. //
+// Result: createRenderNodeWindow //
+// Result: file3 //
+setFilterScript "initialShadingGroup";
+// Result: 0 //
+setFilterScript "initialParticleSE";
+// Result: 0 //
+setFilterScript "defaultLightSet";
+// Result: 1 //
+setFilterScript "defaultObjectSet";
+// Result: 1 //
+setFilterScript "bridge_far_right_5_main:defaultMat";
+// Result: 0 //
+setFilterScript "bridge_far_right_2_pillar:defaultMat";
+// Result: 0 //
+setFilterScript "bridge_far_right_2_main:defaultMat";
+// Result: 0 //
+setFilterScript "bridge_far_right_4_pillar2:defaultMat";
+// Result: 0 //
+setFilterScript "bridge_far_right_3_main:defaultMat";
+// Result: 0 //
+setFilterScript "bridge_far_right_4_pillar1:defaultMat";
+// Result: 0 //
+setFilterScript "bridge_far_right_3_pillar:defaultMat";
+// Result: 0 //
+setFilterScript "bridge_far_right_4_main:defaultMat";
+// Result: 0 //
+setFilterScript "mia_material_x_passes1SG";
+// Result: 0 //
+setFilterScript "mia_material_x_passes1SG1";
+// Result: 0 //
+setFilterScript "mia_material_x_passes2SG";
+// Result: 0 //
+setFilterScript "mia_material_x_passes2SG1";
+// Result: 0 //
+refreshAE;
+listConnections -source true -destination false mia_material_x_passes2SG.volumeShader;
+listConnections -source true -destination false mia_material_x_passes2SG.surfaceShader;
+listConnections -source true -destination false mia_material_x_passes2SG.miContourShader;
+listConnections -source true -destination false mia_material_x_passes2SG.miLightMapShader;
+listConnections -source true -destination false mia_material_x_passes2SG.miEnvironmentShader;
+listConnections -source true -destination false mia_material_x_passes2SG.miDisplacementShader;
+listConnections -source true -destination false mia_material_x_passes2SG.miPhotonVolumeShader;
+listConnections -source true -destination false mia_material_x_passes2SG.miPhotonShader;
+// Result: mia_material_x_passes2 //
+listConnections -source true -destination false mia_material_x_passes2SG.miVolumeShader;
+listConnections -source true -destination false mia_material_x_passes2SG.miShadowShader;
+// Result: mia_material_x_passes2 //
+listConnections -source true -destination false mia_material_x_passes2SG.miMaterialShader;
+// Result: mia_material_x_passes2 //
+autoUpdateAttrEd;
+listConnections -source true -destination false "file3.noiseUV";
+// Result: place2dTexture3 //
+listConnections -source true -destination false "file3.uvCoord";
+// Result: place2dTexture3 //
+listConnections -source true -destination false "file3.outColor";
+listConnections -source true -destination false "file3.outAlpha";
+vrayUpdateAE;
+exists AEfileTemplate;
+// Result: 1 //
+AEfileTemplate "file3";
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+columnLayout -adj true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|columnLayout49 //
+AEswatchDisplayNew file3( "file3.message" );
+scrollLayout -hst 0 -cr true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5 //
+columnLayout -adj true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50 //
+frameLayout -collapsable true -label "File Attributes" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout41 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout41|columnLayout51 //
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+AEnewEnum "file3.filterType" "Filter Type" "checkFilterType" {"0","Off", "1","Mipmap", "2","Box", "3","Quadratic", "4","Quartic", "5","Gaussian"};
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout41|columnLayout51|attrEnumOptionMenuGrp2 //
+AEnewBooleanGroup { "file3.preFilter" } { "Pre Filter" } { "checkPreFilter" } 1;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout41|columnLayout51|formLayout58 //
+AEnewFloat "file3.preFilterRadius" "Pre Filter Radius" "" ;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout41|columnLayout51|attrFieldSliderGrp20 //
+separator -h 10 -style "in";
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout41|columnLayout51|separator4 //
+columnLayout -adj true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout41|columnLayout51|columnLayout52 //
+AEfileTextureNameNew( "file3.fileTextureName" );
+columnLayout -adj true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout41|columnLayout51|columnLayout53 //
+AEfileTextureReload( "file3.fileTextureName" );
+columnLayout -adj true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout41|columnLayout51|columnLayout54 //
+AEcolorProfileNew( "file3.colorProfile" );
+separator -h 10 -style "in";
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout41|columnLayout51|separator5 //
+AEnewBooleanGroup { "file3.useCache" } { "Use BOT" } { "" } 1;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout41|columnLayout51|formLayout59 //
+AEnewBooleanGroup { "file3.disableFileLoad" } { "Disable File Load" } { "" } 1;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout41|columnLayout51|formLayout60 //
+AEnewBooleanGroup { "file3.useFrameExtension" } { "Use Image Sequence" } { "checkUseFrameExtension" } 1;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout41|columnLayout51|formLayout61 //
+AEnewInt "file3.frameExtension" "Image Number" "" ;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout41|columnLayout51|attrFieldSliderGrp21 //
+AEnewInt "file3.frameOffset" "Frame Offset" "" ;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout41|columnLayout51|attrFieldSliderGrp22 //
+setParent ..; setParent ..;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50 //
+setUITemplate -ppt;
+// Result: attributeEditorTemplate //
+frameLayout -collapsable true -label "Interactive Sequence Caching Options" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout42 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout42|columnLayout55 //
+frameLayout -collapsable true -label "High Dynamic Range Image Preview Options" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout43 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout43|columnLayout56 //
+frameLayout -collapsable true -label "Color Balance" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout44 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout44|columnLayout57 //
+frameLayout -collapsable true -label "Effects" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout45 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout45|columnLayout58 //
+frameLayout -collapsable true -label "UV Coordinates" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout46 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout46|columnLayout59 //
+frameLayout -collapsable true -label "Node Behavior" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout47 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout47|columnLayout60 //
+frameLayout -collapsable true -label "mental ray" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout48 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout48|columnLayout61 //
+frameLayout -collapsable true -label "Extra Attributes" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout49 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout49|columnLayout62 //
+setParent ..; setParent ..;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout //
+setUITemplate -ppt;
+// Result: NONE //
+updateAnimLayerEditor("AnimLayerTab");
+statusLineUpdateInputField;
+vrayUpdateAE;
+refreshAssignNewMaterialTreeLister "";
+if (`objExists "file3"`) checkFilterType "file3";
+if (`objExists "file3"`) checkPreFilter "file3";
+attrFieldSliderGrp -e -en false attrFieldSliderGrp20;
+// Result: attrFieldSliderGrp20 //
+if (`objExists "file3"`) checkUseFrameExtension "file3";
+attrFieldSliderGrp -e -en false attrFieldSliderGrp21;
+// Result: attrFieldSliderGrp21 //
+attrFieldSliderGrp -e -en false attrFieldSliderGrp22;
+// Result: attrFieldSliderGrp22 //
+if (`objExists "file3"`) checkUseHardwareTextureCycling "file3";
+if (`objExists "file3"`) checkHDRMapping "file3";
+if (`objExists "file3"`) checkAutoConvert "file3";
+vrayUpdateAEJob;
+vrayUpdateAEJob;
+setAttr "file3.filterType" 0;
+checkFilterType "file3";
+AEfileTextureBrowser "AEassignTextureCB  file3.fileTextureName";
+(u"").replace("\\","/");
+# Result:  #
+np_getPrimaryProjectFileRules 0;
+// Result: Scenes scene scenes Templates templates assets Images images images Source Images sourceImages sourceimages Render Data renderData  Particles particles particles Clips clips clips Sound sound  Scripts scripts  Disk Cache diskCache data Movies movie data Translator Data translatorData  AutoSave autoSave autosave //
+(u"E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_far_right_group/export/bridge_far_right_2_main-TM_u0_v0.tif").replace("\\","/");
+# Result: E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_far_right_group/export/bridge_far_right_2_main-TM_u0_v0.tif #
+import os as __os
+try:
+	__os.environ['WF_IMF_SGI_MATTE']='1'
+except: pass
+del __os
+optionVar -q maxImageSizeForSwatchGen;
+// Result: 2000 //
+vrayUpdateAE;AEpropagateMenuCB -backward "" "file3";
+listConnections -source true -destination false "mia_material_x_passes2.diffuse";
+// Result: file3 //
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+setParent MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|columnLayout30;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|columnLayout30 //
+AEswatchDisplayReplace mia_material_x_passes2( "mia_material_x_passes2.message" );
+AEreplaceBoolean "MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|formLayout55" "mia_material_x_passes2.multiple_outputs" "" 1;
+AEreplaceColor "MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout24|columnLayout32|attrColorSliderGrp1" "mia_material_x_passes2.diffuse" "" ;
+AEreplaceFloat "MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout24|columnLayout32|attrFieldSliderGrp11" "mia_material_x_passes2.diffuse_weight" "" ;
+AEreplaceFloat "MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout24|columnLayout32|attrFieldSliderGrp12" "mia_material_x_passes2.diffuse_roughness" "" ;
+AEreplaceColor "MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout25|columnLayout33|attrColorSliderGrp2" "mia_material_x_passes2.refl_color" "" ;
+AEreplaceFloat "MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout25|columnLayout33|attrFieldSliderGrp13" "mia_material_x_passes2.reflectivity" "" ;
+AEreplaceFloat "MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout25|columnLayout33|attrFieldSliderGrp14" "mia_material_x_passes2.refl_gloss" "AEmiaCheckReflectGlossiness" ;
+AEreplaceInt "MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout25|columnLayout33|attrFieldSliderGrp15" "mia_material_x_passes2.refl_gloss_samples" "" ;
+AEreplaceBoolean "MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout25|columnLayout33|formLayout56" "mia_material_x_passes2.refl_hl_only" "" 1;
+AEreplaceBoolean "MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout25|columnLayout33|formLayout57" "mia_material_x_passes2.refl_is_metal" "" 1;
+AEreplaceFloat "MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout27|columnLayout35|attrFieldSliderGrp16" "mia_material_x_passes2.refr_ior" "" ;
+AEreplaceColor "MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout27|columnLayout35|attrColorSliderGrp3" "mia_material_x_passes2.refr_color" "" ;
+AEreplaceFloat "MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout27|columnLayout35|attrFieldSliderGrp17" "mia_material_x_passes2.transparency" "" ;
+AEreplaceFloat "MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout27|columnLayout35|attrFieldSliderGrp18" "mia_material_x_passes2.refr_gloss" "AEmiaCheckRefractGlossiness" ;
+AEreplaceInt "MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout27|columnLayout35|attrFieldSliderGrp19" "mia_material_x_passes2.refr_gloss_samples" "" ;
+setUITemplate -ppt;
+// Result: NONE //
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckReflectGlossiness "mia_material_x_passes2";
+attrFieldSliderGrp -e -en false attrFieldSliderGrp15;
+// Result: attrFieldSliderGrp15 //
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckReflectFalloff "mia_material_x_passes2";
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckReflectFalloff "mia_material_x_passes2";
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckRefractGlossiness "mia_material_x_passes2";
+attrFieldSliderGrp -e -en false attrFieldSliderGrp19;
+// Result: attrFieldSliderGrp19 //
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckRefractFalloff "mia_material_x_passes2";
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckRefractFalloff "mia_material_x_passes2";
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckAnisotropy "mia_material_x_passes2";
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckUseFresnel "mia_material_x_passes2";
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckUseTranslucency "mia_material_x_passes2";
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckUseAO "mia_material_x_passes2";
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckIntrRefl "mia_material_x_passes2";
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckIntrRefl "mia_material_x_passes2";
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckIntrRefl "mia_material_x_passes2";
+vrayUpdateAEJob;
+setParent MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout35|columnLayout43;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout35|columnLayout43 //
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+columnLayout -adj true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout35|columnLayout43|columnLayout63 //
+AEmiaXpassesOverallBumpNew( "mia_material_x_passes2.overall_bump" );
+columnLayout -adj true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout35|columnLayout43|columnLayout64 //
+AEmiaXpassesStandardBumpNew( "mia_material_x_passes2.standard_bump" );
+AEnewBooleanGroup { "mia_material_x_passes2.no_diffuse_bump" } { "No Diffuse Bump" } { "" } 1;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31|frameLayout35|columnLayout43|formLayout62 //
+setParent ..; setParent ..;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdmia_material_x_passesFormLayout|scrollLayout4|columnLayout31 //
+setUITemplate -ppt;
+// Result: NONE //
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckReflectGlossiness "mia_material_x_passes2";
+attrFieldSliderGrp -e -en false attrFieldSliderGrp15;
+// Result: attrFieldSliderGrp15 //
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckReflectFalloff "mia_material_x_passes2";
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckReflectFalloff "mia_material_x_passes2";
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckRefractGlossiness "mia_material_x_passes2";
+attrFieldSliderGrp -e -en false attrFieldSliderGrp19;
+// Result: attrFieldSliderGrp19 //
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckRefractFalloff "mia_material_x_passes2";
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckRefractFalloff "mia_material_x_passes2";
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckAnisotropy "mia_material_x_passes2";
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckUseFresnel "mia_material_x_passes2";
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckUseTranslucency "mia_material_x_passes2";
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckUseAO "mia_material_x_passes2";
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckIntrRefl "mia_material_x_passes2";
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckIntrRefl "mia_material_x_passes2";
+if (`objExists "mia_material_x_passes2"`) AEmiaCheckIntrRefl "mia_material_x_passes2";
+defaultNavigation -createNew -destination "mia_material_x_passes2.standard_bump";
+createNewOverride("mia_material_x_passes2.standard_bump", true);
+// Result: 1 //
+createRenderNode -allWithTexturesUp "defaultNavigation -force true -connectToExisting -source %node -destination mia_material_x_passes2.standard_bump" "";
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("Maya/Surface/VRay Blend Mtl","VRayBlendMtl")
+_fav.addPath("Maya/Surface/VRay Bump Mtl","VRayBumpMtl")
+_fav.addPath("Maya/Surface/VRay Car Paint Mtl","VRayCarPaintMtl")
+_fav.addPath("Maya/Surface/VRay Fast SSS2","VRayFastSSS2")
+_fav.addPath("Maya/Surface/VRay Light Mtl","VRayLightMtl")
+_fav.addPath("Maya/Surface/VRay Mesh Material","VRayMeshMaterial")
+_fav.addPath("Maya/Surface/VRay Mtl","VRayMtl")
+_fav.addPath("Maya/Surface/VRay Mtl 2Sided","VRayMtl2Sided")
+_fav.addPath("Maya/Surface/VRay Mtl Wrapper","VRayMtlWrapper")
+_fav.addPath("Maya/Surface/VRay Plugin Node Mtl","VRayPluginNodeMtl")
+_fav.addPath("Maya/Surface/VRay Simbiont","VRaySimbiont")
+_fav.addPath("Maya/Surface/Anisotropic","anisotropic")
+_fav.addPath("Maya/Surface/Blinn","blinn")
+_fav.addPath("Maya/Surface/Hair Tube Shader","hairTubeShader")
+_fav.addPath("Maya/Surface/Lambert","lambert")
+_fav.addPath("Maya/Surface/Layered Shader","layeredShader")
+_fav.addPath("Maya/Surface/Ocean Shader","oceanShader")
+_fav.addPath("Maya/Surface/Phong","phong")
+_fav.addPath("Maya/Surface/Phong E","phongE")
+_fav.addPath("Maya/Surface/Ramp Shader","rampShader")
+_fav.addPath("Maya/Surface/Shading Map","shadingMap")
+_fav.addPath("Maya/Surface/Surface Shader","surfaceShader")
+_fav.addPath("Maya/Surface/Use Background","useBackground")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("Maya/Volumetric/VRay Environment Fog","VRayEnvironmentFog")
+_fav.addPath("Maya/Volumetric/VRay Scatter Fog","VRayScatterFog")
+_fav.addPath("Maya/Volumetric/VRay Simple Fog","VRaySimpleFog")
+_fav.addPath("Maya/Volumetric/VRay Sphere Fade Volume","VRaySphereFadeVolume")
+_fav.addPath("Maya/Volumetric/Env Fog","envFog")
+_fav.addPath("Maya/Volumetric/Fluid Shape","fluidShape")
+_fav.addPath("Maya/Volumetric/Light Fog","lightFog")
+_fav.addPath("Maya/Volumetric/Particle Cloud","particleCloud")
+_fav.addPath("Maya/Volumetric/Volume Fog","volumeFog")
+_fav.addPath("Maya/Volumetric/Volume Shader","volumeShader")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("Maya/Displacement/Displacement","displacementShader")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("Maya/2D Textures/VRay Dirt","VRayDirt")
+_fav.addPath("Maya/2D Textures/VRay Edges","VRayEdges")
+_fav.addPath("Maya/2D Textures/VRay Fresnel","VRayFresnel")
+_fav.addPath("Maya/2D Textures/VRay Vertex Colors","VRayVertexColors")
+_fav.addPath("Maya/2D Textures/VRay Water","VRayWater")
+_fav.addPath("Maya/2D Textures/Bulge","bulge")
+_fav.addPath("Maya/2D Textures/Checker","checker")
+_fav.addPath("Maya/2D Textures/Cloth","cloth")
+_fav.addPath("Maya/2D Textures/File","file")
+_fav.addPath("Maya/2D Textures/Fluid Texture 2D","fluidTexture2D")
+_fav.addPath("Maya/2D Textures/Fractal","fractal")
+_fav.addPath("Maya/2D Textures/Grid","grid")
+_fav.addPath("Maya/2D Textures/Mountain","mountain")
+_fav.addPath("Maya/2D Textures/Movie","movie")
+_fav.addPath("Maya/2D Textures/Noise","noise")
+_fav.addPath("Maya/2D Textures/Ocean","ocean")
+_fav.addPath("Maya/2D Textures/PSD File","psdFileTex")
+_fav.addPath("Maya/2D Textures/Ramp","ramp")
+_fav.addPath("Maya/2D Textures/Water","water")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("Maya/3D Textures/Brownian","brownian")
+_fav.addPath("Maya/3D Textures/Cloud","cloud")
+_fav.addPath("Maya/3D Textures/Crater","crater")
+_fav.addPath("Maya/3D Textures/Fluid Texture 3D","fluidTexture3D")
+_fav.addPath("Maya/3D Textures/Granite","granite")
+_fav.addPath("Maya/3D Textures/Leather","leather")
+_fav.addPath("Maya/3D Textures/Marble","marble")
+_fav.addPath("Maya/3D Textures/Rock","rock")
+_fav.addPath("Maya/3D Textures/Snow","snow")
+_fav.addPath("Maya/3D Textures/Solid Fractal","solidFractal")
+_fav.addPath("Maya/3D Textures/Stucco","stucco")
+_fav.addPath("Maya/3D Textures/Volume Noise","volumeNoise")
+_fav.addPath("Maya/3D Textures/Wood","wood")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("Maya/Env Textures/VRay Sky","VRaySky")
+_fav.addPath("Maya/Env Textures/Env Ball","envBall")
+_fav.addPath("Maya/Env Textures/Env Chrome","envChrome")
+_fav.addPath("Maya/Env Textures/Env Cube","envCube")
+_fav.addPath("Maya/Env Textures/Env Sky","envSky")
+_fav.addPath("Maya/Env Textures/Env Sphere","envSphere")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("Maya/Other Textures/VRay Ptex","VRayPtex")
+_fav.addPath("Maya/Other Textures/Layered Texture","layeredTexture")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("Maya/Lights/VRay Light Dome Shape","VRayLightDomeShape")
+_fav.addPath("Maya/Lights/VRay Light IESShape","VRayLightIESShape")
+_fav.addPath("Maya/Lights/VRay Light Rect Shape","VRayLightRectShape")
+_fav.addPath("Maya/Lights/VRay Light Sphere Shape","VRayLightSphereShape")
+_fav.addPath("Maya/Lights/VRay Sun Shape","VRaySunShape")
+_fav.addPath("Maya/Lights/Ambient Light","ambientLight")
+_fav.addPath("Maya/Lights/Area Light","areaLight")
+_fav.addPath("Maya/Lights/Directional Light","directionalLight")
+_fav.addPath("Maya/Lights/Point Light","pointLight")
+_fav.addPath("Maya/Lights/Spot Light","spotLight")
+_fav.addPath("Maya/Lights/Volume Light","volumeLight")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("Maya/Utilities/VRay Fur Sampler","VRayFurSampler")
+_fav.addPath("Maya/Utilities/VRay Object Properties","VRayObjectProperties")
+_fav.addPath("Maya/Utilities/VRay Place Env Tex","VRayPlaceEnvTex")
+_fav.addPath("Maya/Utilities/VRay Render Element Set","VRayRenderElementSet")
+_fav.addPath("Maya/Utilities/VRay Sh Info","VRayShInfo")
+_fav.addPath("Maya/Utilities/VRay Switch Transform","VRaySwitchTransform")
+_fav.addPath("Maya/Utilities/Add Double Linear","addDoubleLinear")
+_fav.addPath("Maya/Utilities/Add Matrix","addMatrix")
+_fav.addPath("Maya/Utilities/Angle Between","angleBetween")
+_fav.addPath("Maya/Utilities/Array Mapper","arrayMapper")
+_fav.addPath("Maya/Utilities/Blend Colors","blendColors")
+_fav.addPath("Maya/Utilities/Blend Two Attr","blendTwoAttr")
+_fav.addPath("Maya/Utilities/Bump 2d","bump2d")
+_fav.addPath("Maya/Utilities/Bump 3d","bump3d")
+_fav.addPath("Maya/Utilities/Choice","choice")
+_fav.addPath("Maya/Utilities/Chooser","chooser")
+_fav.addPath("Maya/Utilities/Clamp","clamp")
+_fav.addPath("Maya/Utilities/Color Profile","colorProfile")
+_fav.addPath("Maya/Utilities/Condition","condition")
+_fav.addPath("Maya/Utilities/Contrast","contrast")
+_fav.addPath("Maya/Utilities/Curve Info","curveInfo")
+_fav.addPath("Maya/Utilities/Distance Between","distanceBetween")
+_fav.addPath("Maya/Utilities/Double Switch","doubleShadingSwitch")
+_fav.addPath("Maya/Utilities/Frame Cache","frameCache")
+_fav.addPath("Maya/Utilities/Gamma Correct","gammaCorrect")
+_fav.addPath("Maya/Utilities/Height Field","heightField")
+_fav.addPath("Maya/Utilities/Hsv To Rgb","hsvToRgb")
+_fav.addPath("Maya/Utilities/Light Info","lightInfo")
+_fav.addPath("Maya/Utilities/Luminance","luminance")
+_fav.addPath("Maya/Utilities/Mult Double Linear","multDoubleLinear")
+_fav.addPath("Maya/Utilities/Multiply Divide","multiplyDivide")
+_fav.addPath("Maya/Utilities/Particle Sampler","particleSamplerInfo")
+_fav.addPath("Maya/Utilities/2d Placement","place2dTexture")
+_fav.addPath("Maya/Utilities/3d Placement","place3dTexture")
+_fav.addPath("Maya/Utilities/+|- Average","plusMinusAverage")
+_fav.addPath("Maya/Utilities/Projection","projection")
+_fav.addPath("Maya/Utilities/Quad Switch","quadShadingSwitch")
+_fav.addPath("Maya/Utilities/Remap Color","remapColor")
+_fav.addPath("Maya/Utilities/Remap Hsv","remapHsv")
+_fav.addPath("Maya/Utilities/Remap Value","remapValue")
+_fav.addPath("Maya/Utilities/Reverse","reverse")
+_fav.addPath("Maya/Utilities/Rgb To Hsv","rgbToHsv")
+_fav.addPath("Maya/Utilities/Sampler Info","samplerInfo")
+_fav.addPath("Maya/Utilities/Set Range","setRange")
+_fav.addPath("Maya/Utilities/Single Switch","singleShadingSwitch")
+_fav.addPath("Maya/Utilities/Smear","smear")
+_fav.addPath("Maya/Utilities/Stencil","stencil")
+_fav.addPath("Maya/Utilities/Studio Clear Coat","studioClearCoat")
+_fav.addPath("Maya/Utilities/Surface Info","surfaceInfo")
+_fav.addPath("Maya/Utilities/Surf. Luminance","surfaceLuminance")
+_fav.addPath("Maya/Utilities/Triple Switch","tripleShadingSwitch")
+_fav.addPath("Maya/Utilities/Unit Conversion","unitConversion")
+_fav.addPath("Maya/Utilities/Uv Chooser","uvChooser")
+_fav.addPath("Maya/Utilities/Vector Product","vectorProduct")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("Maya/Image Planes/Image Plane","imagePlane")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("Maya/Glow/Optical FX","opticalFX")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("Maya/Rendering/Render Layer","renderLayer")
+_fav.addPath("Maya/Rendering/Render Pass","renderPass")
+_fav.addPath("Maya/Rendering/Render Target","renderTarget")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/Materials/dgs_material","dgs_material")
+_fav.addPath("mental ray/Materials/dielectric_material","dielectric_material")
+_fav.addPath("mental ray/Materials/mi_car_paint_phen","mi_car_paint_phen")
+_fav.addPath("mental ray/Materials/mi_car_paint_phen_x","mi_car_paint_phen_x")
+_fav.addPath("mental ray/Materials/mi_car_paint_phen_x_passes","mi_car_paint_phen_x_passes")
+_fav.addPath("mental ray/Materials/mi_metallic_paint","mi_metallic_paint")
+_fav.addPath("mental ray/Materials/mi_metallic_paint_x","mi_metallic_paint_x")
+_fav.addPath("mental ray/Materials/mi_metallic_paint_x_passes","mi_metallic_paint_x_passes")
+_fav.addPath("mental ray/Materials/mia_material","mia_material")
+_fav.addPath("mental ray/Materials/mia_material_x","mia_material_x")
+_fav.addPath("mental ray/Materials/mia_material_x_passes","mia_material_x_passes")
+_fav.addPath("mental ray/Materials/mib_glossy_reflection","mib_glossy_reflection")
+_fav.addPath("mental ray/Materials/mib_glossy_refraction","mib_glossy_refraction")
+_fav.addPath("mental ray/Materials/mib_illum_blinn","mib_illum_blinn")
+_fav.addPath("mental ray/Materials/mib_illum_cooktorr","mib_illum_cooktorr")
+_fav.addPath("mental ray/Materials/mib_illum_hair","mib_illum_hair")
+_fav.addPath("mental ray/Materials/mib_illum_lambert","mib_illum_lambert")
+_fav.addPath("mental ray/Materials/mib_illum_phong","mib_illum_phong")
+_fav.addPath("mental ray/Materials/mib_illum_ward","mib_illum_ward")
+_fav.addPath("mental ray/Materials/mib_illum_ward_deriv","mib_illum_ward_deriv")
+_fav.addPath("mental ray/Materials/misss_call_shader","misss_call_shader")
+_fav.addPath("mental ray/Materials/misss_fast_shader","misss_fast_shader")
+_fav.addPath("mental ray/Materials/misss_fast_shader_x","misss_fast_shader_x")
+_fav.addPath("mental ray/Materials/misss_fast_shader_x_passes","misss_fast_shader_x_passes")
+_fav.addPath("mental ray/Materials/misss_fast_simple_maya","misss_fast_simple_maya")
+_fav.addPath("mental ray/Materials/misss_fast_skin_maya","misss_fast_skin_maya")
+_fav.addPath("mental ray/Materials/misss_physical","misss_physical")
+_fav.addPath("mental ray/Materials/misss_set_normal","misss_set_normal")
+_fav.addPath("mental ray/Materials/misss_skin_specular","misss_skin_specular")
+_fav.addPath("mental ray/Materials/path_material","path_material")
+_fav.addPath("mental ray/Materials/transmat","transmat")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/Shadow Shaders/mib_shadow_transparency","mib_shadow_transparency")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/Volumetric Materials/mib_ray_marcher","mib_ray_marcher")
+_fav.addPath("mental ray/Volumetric Materials/mib_volume","mib_volume")
+_fav.addPath("mental ray/Volumetric Materials/parti_volume","parti_volume")
+del _fav
+import maya.app.general.tlfavorites as _fav
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/Photonic Materials/dgs_material_photon","dgs_material_photon")
+_fav.addPath("mental ray/Photonic Materials/dielectric_material_photon","dielectric_material_photon")
+_fav.addPath("mental ray/Photonic Materials/mib_photon_basic","mib_photon_basic")
+_fav.addPath("mental ray/Photonic Materials/transmat_photon","transmat_photon")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/Photon Volumetric Materials/parti_volume_photon","parti_volume_photon")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/Textures/mentalrayTexture","mentalrayTexture")
+_fav.addPath("mental ray/Textures/mentalrayVertexColors","mentalrayVertexColors")
+_fav.addPath("mental ray/Textures/mi_bump_flakes","mi_bump_flakes")
+_fav.addPath("mental ray/Textures/mia_light_surface","mia_light_surface")
+_fav.addPath("mental ray/Textures/mia_roundcorners","mia_roundcorners")
+_fav.addPath("mental ray/Textures/mib_amb_occlusion","mib_amb_occlusion")
+_fav.addPath("mental ray/Textures/mib_bent_normal_env","mib_bent_normal_env")
+_fav.addPath("mental ray/Textures/mib_bump_basis","mib_bump_basis")
+_fav.addPath("mental ray/Textures/mib_bump_map","mib_bump_map")
+_fav.addPath("mental ray/Textures/mib_bump_map2","mib_bump_map2")
+_fav.addPath("mental ray/Textures/mib_fast_occlusion","mib_fast_occlusion")
+_fav.addPath("mental ray/Textures/mib_passthrough_bump_map","mib_passthrough_bump_map")
+_fav.addPath("mental ray/Textures/mib_texture_checkerboard","mib_texture_checkerboard")
+_fav.addPath("mental ray/Textures/mib_texture_filter_lookup","mib_texture_filter_lookup")
+_fav.addPath("mental ray/Textures/mib_texture_lookup","mib_texture_lookup")
+_fav.addPath("mental ray/Textures/mib_texture_lookup2","mib_texture_lookup2")
+_fav.addPath("mental ray/Textures/mib_texture_polkadot","mib_texture_polkadot")
+_fav.addPath("mental ray/Textures/mib_texture_polkasphere","mib_texture_polkasphere")
+_fav.addPath("mental ray/Textures/mib_texture_remap","mib_texture_remap")
+_fav.addPath("mental ray/Textures/mib_texture_rotate","mib_texture_rotate")
+_fav.addPath("mental ray/Textures/mib_texture_turbulence","mib_texture_turbulence")
+_fav.addPath("mental ray/Textures/mib_texture_vector","mib_texture_vector")
+_fav.addPath("mental ray/Textures/mib_texture_wave","mib_texture_wave")
+_fav.addPath("mental ray/Textures/misss_lambert_gamma","misss_lambert_gamma")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/Environments/mia_ciesky","mia_ciesky")
+_fav.addPath("mental ray/Environments/mia_envblur","mia_envblur")
+_fav.addPath("mental ray/Environments/mib_lookup_cube1","mib_lookup_cube1")
+_fav.addPath("mental ray/Environments/mib_lookup_cube6","mib_lookup_cube6")
+_fav.addPath("mental ray/Environments/mib_lookup_cylindrical","mib_lookup_cylindrical")
+_fav.addPath("mental ray/Environments/mib_lookup_spherical","mib_lookup_spherical")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/MentalRay Lights/mia_photometric_light","mia_photometric_light")
+_fav.addPath("mental ray/MentalRay Lights/mia_physicalsun","mia_physicalsun")
+_fav.addPath("mental ray/MentalRay Lights/mia_portal_light","mia_portal_light")
+_fav.addPath("mental ray/MentalRay Lights/mib_blackbody","mib_blackbody")
+_fav.addPath("mental ray/MentalRay Lights/mib_cie_d","mib_cie_d")
+_fav.addPath("mental ray/MentalRay Lights/mib_fg_occlusion","mib_fg_occlusion")
+_fav.addPath("mental ray/MentalRay Lights/mib_light_infinite","mib_light_infinite")
+_fav.addPath("mental ray/MentalRay Lights/mib_light_photometric","mib_light_photometric")
+_fav.addPath("mental ray/MentalRay Lights/mib_light_point","mib_light_point")
+_fav.addPath("mental ray/MentalRay Lights/mib_light_spot","mib_light_spot")
+_fav.addPath("mental ray/MentalRay Lights/physical_light","physical_light")
+del _fav
+import maya.app.general.tlfavorites as _fav
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/Light Maps/mib_lightmap_sample","mib_lightmap_sample")
+_fav.addPath("mental ray/Light Maps/mib_lightmap_write","mib_lightmap_write")
+_fav.addPath("mental ray/Light Maps/misss_fast_lmap_maya","misss_fast_lmap_maya")
+_fav.addPath("mental ray/Light Maps/misss_lightmap_write","misss_lightmap_write")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/Lenses/mia_exposure_photographic","mia_exposure_photographic")
+_fav.addPath("mental ray/Lenses/mia_exposure_simple","mia_exposure_simple")
+_fav.addPath("mental ray/Lenses/mia_lens_bokeh","mia_lens_bokeh")
+_fav.addPath("mental ray/Lenses/mia_physicalsky","mia_physicalsky")
+_fav.addPath("mental ray/Lenses/mib_lens_clamp","mib_lens_clamp")
+_fav.addPath("mental ray/Lenses/mib_lens_stencil","mib_lens_stencil")
+_fav.addPath("mental ray/Lenses/mib_lookup_background","mib_lookup_background")
+_fav.addPath("mental ray/Lenses/oversampling_lens","oversampling_lens")
+_fav.addPath("mental ray/Lenses/physical_lens_dof","physical_lens_dof")
+del _fav
+import maya.app.general.tlfavorites as _fav
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/Geometry/mib_geo_add_uv_texsurf","mib_geo_add_uv_texsurf")
+_fav.addPath("mental ray/Geometry/mib_geo_cone","mib_geo_cone")
+_fav.addPath("mental ray/Geometry/mib_geo_cube","mib_geo_cube")
+_fav.addPath("mental ray/Geometry/mib_geo_cylinder","mib_geo_cylinder")
+_fav.addPath("mental ray/Geometry/mib_geo_instance","mib_geo_instance")
+_fav.addPath("mental ray/Geometry/mib_geo_instance_mlist","mib_geo_instance_mlist")
+_fav.addPath("mental ray/Geometry/mib_geo_sphere","mib_geo_sphere")
+_fav.addPath("mental ray/Geometry/mib_geo_square","mib_geo_square")
+_fav.addPath("mental ray/Geometry/mib_geo_torus","mib_geo_torus")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/Contour Store/contour_store_function","contour_store_function")
+_fav.addPath("mental ray/Contour Store/contour_store_function_simple","contour_store_function_simple")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/Contour Contrast/contour_contrast_function_levels","contour_contrast_function_levels")
+_fav.addPath("mental ray/Contour Contrast/contour_contrast_function_simple","contour_contrast_function_simple")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/Contour Shader/contour_shader_combi","contour_shader_combi")
+_fav.addPath("mental ray/Contour Shader/contour_shader_curvature","contour_shader_curvature")
+_fav.addPath("mental ray/Contour Shader/contour_shader_depthfade","contour_shader_depthfade")
+_fav.addPath("mental ray/Contour Shader/contour_shader_factorcolor","contour_shader_factorcolor")
+_fav.addPath("mental ray/Contour Shader/contour_shader_framefade","contour_shader_framefade")
+_fav.addPath("mental ray/Contour Shader/contour_shader_layerthinner","contour_shader_layerthinner")
+_fav.addPath("mental ray/Contour Shader/contour_shader_maxcolor","contour_shader_maxcolor")
+_fav.addPath("mental ray/Contour Shader/contour_shader_silhouette","contour_shader_silhouette")
+_fav.addPath("mental ray/Contour Shader/contour_shader_simple","contour_shader_simple")
+_fav.addPath("mental ray/Contour Shader/contour_shader_widthfromcolor","contour_shader_widthfromcolor")
+_fav.addPath("mental ray/Contour Shader/contour_shader_widthfromlight","contour_shader_widthfromlight")
+_fav.addPath("mental ray/Contour Shader/contour_shader_widthfromlightdir","contour_shader_widthfromlightdir")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/Contour Output/contour_composite","contour_composite")
+_fav.addPath("mental ray/Contour Output/contour_only","contour_only")
+_fav.addPath("mental ray/Contour Output/contour_ps","contour_ps")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/Sample Compositing/mib_continue","mib_continue")
+_fav.addPath("mental ray/Sample Compositing/mib_dielectric","mib_dielectric")
+_fav.addPath("mental ray/Sample Compositing/mib_opacity","mib_opacity")
+_fav.addPath("mental ray/Sample Compositing/mib_reflect","mib_reflect")
+_fav.addPath("mental ray/Sample Compositing/mib_refract","mib_refract")
+_fav.addPath("mental ray/Sample Compositing/mib_refraction_index","mib_refraction_index")
+_fav.addPath("mental ray/Sample Compositing/mib_transparency","mib_transparency")
+_fav.addPath("mental ray/Sample Compositing/mib_twosided","mib_twosided")
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/Data Conversion/mib_color_alpha","mib_color_alpha")
+_fav.addPath("mental ray/Data Conversion/mib_color_average","mib_color_average")
+_fav.addPath("mental ray/Data Conversion/mib_color_intensity","mib_color_intensity")
+_fav.addPath("mental ray/Data Conversion/mib_color_interpolate","mib_color_interpolate")
+_fav.addPath("mental ray/Data Conversion/mib_color_mix","mib_color_mix")
+_fav.addPath("mental ray/Data Conversion/mib_color_spread","mib_color_spread")
+del _fav
+import maya.app.general.tlfavorites as _fav
+del _fav
+import maya.app.general.tlfavorites as _fav
+_fav.addPath("mental ray/Miscellaneous/mentalrayPhenomenon","mentalrayPhenomenon")
+_fav.addPath("mental ray/Miscellaneous/writeToColorBuffer","writeToColorBuffer")
+_fav.addPath("mental ray/Miscellaneous/writeToDepthBuffer","writeToDepthBuffer")
+_fav.addPath("mental ray/Miscellaneous/writeToLabelBuffer","writeToLabelBuffer")
+_fav.addPath("mental ray/Miscellaneous/writeToVectorBuffer","writeToVectorBuffer")
+del _fav
+import maya.app.general.tlfavorites as _fav;_fav.attachStore('createRenderNodeWindow|creationWindowForm|nodeTreeLister2',"C:/Users/Yinglei/Documents/maya/2012-x64/prefs/renderNodeTypeFavorites");del _fav
+# Result: <maya.app.general.tlfavorites.TLFavoriteStore object at 0x000000002C5DDC18> #
+defaultNavigation -dtv -d mia_material_x_passes2.standard_bump;
+defaultNavigation -defaultTraversal -destination "mia_material_x_passes2.standard_bump";
+createRenderNodeCB -as2DTexture "" file "defaultNavigation -force true -connectToExisting -source %node -destination mia_material_x_passes2.standard_bump; window -e -vis false createRenderNodeWindow;";
+shadingNode -asTexture file;
+// Result: file4 //
+shadingNode -asUtility place2dTexture;
+// Result: place2dTexture4 //
+connectAttr -f place2dTexture4.coverage file4.coverage;
+// Result: Connected place2dTexture4.coverage to file4.coverage. //
+connectAttr -f place2dTexture4.translateFrame file4.translateFrame;
+// Result: Connected place2dTexture4.translateFrame to file4.translateFrame. //
+connectAttr -f place2dTexture4.rotateFrame file4.rotateFrame;
+// Result: Connected place2dTexture4.rotateFrame to file4.rotateFrame. //
+connectAttr -f place2dTexture4.mirrorU file4.mirrorU;
+// Result: Connected place2dTexture4.mirrorU to file4.mirrorU. //
+connectAttr -f place2dTexture4.mirrorV file4.mirrorV;
+// Result: Connected place2dTexture4.mirrorV to file4.mirrorV. //
+connectAttr -f place2dTexture4.stagger file4.stagger;
+// Result: Connected place2dTexture4.stagger to file4.stagger. //
+connectAttr -f place2dTexture4.wrapU file4.wrapU;
+// Result: Connected place2dTexture4.wrapU to file4.wrapU. //
+connectAttr -f place2dTexture4.wrapV file4.wrapV;
+// Result: Connected place2dTexture4.wrapV to file4.wrapV. //
+connectAttr -f place2dTexture4.repeatUV file4.repeatUV;
+// Result: Connected place2dTexture4.repeatUV to file4.repeatUV. //
+connectAttr -f place2dTexture4.offset file4.offset;
+// Result: Connected place2dTexture4.offset to file4.offset. //
+connectAttr -f place2dTexture4.rotateUV file4.rotateUV;
+// Result: Connected place2dTexture4.rotateUV to file4.rotateUV. //
+connectAttr -f place2dTexture4.noiseUV file4.noiseUV;
+// Result: Connected place2dTexture4.noiseUV to file4.noiseUV. //
+connectAttr -f place2dTexture4.vertexUvOne file4.vertexUvOne;
+// Result: Connected place2dTexture4.vertexUvOne to file4.vertexUvOne. //
+connectAttr -f place2dTexture4.vertexUvTwo file4.vertexUvTwo;
+// Result: Connected place2dTexture4.vertexUvTwo to file4.vertexUvTwo. //
+connectAttr -f place2dTexture4.vertexUvThree file4.vertexUvThree;
+// Result: Connected place2dTexture4.vertexUvThree to file4.vertexUvThree. //
+connectAttr -f place2dTexture4.vertexCameraOne file4.vertexCameraOne;
+// Result: Connected place2dTexture4.vertexCameraOne to file4.vertexCameraOne. //
+connectAttr place2dTexture4.outUV file4.uv;
+// Result: Connected place2dTexture4.outUV to file4.uvCoord. //
+connectAttr place2dTexture4.outUvFilterSize file4.uvFilterSize;
+// Result: Connected place2dTexture4.outUvFilterSize to file4.uvFilterSize. //
+defaultNavigation -force true -connectToExisting -source file4 -destination mia_material_x_passes2.standard_bump; window -e -vis false createRenderNodeWindow;
+connectNodeToAttrOverride("file4", "mia_material_x_passes2.standard_bump");
+// Result: 1 //
+shadingNode -asUtility bump2d;
+// Result: bump2d2 //
+setAttr file4.alphaIsLuminance true;
+connectAttr -f file4.outAlpha bump2d2.bumpValue;
+// Result: Connected file4.outAlpha to bump2d2.bumpValue. //
+connectAttr -f bump2d2.outNormal mia_material_x_passes2.standard_bump;
+defaultNavigation -dtv -d mia_material_x_passes2.standard_bump;
+// Result: file4 //
+defaultNavigation -dtv -d mia_material_x_passes2.standard_bump;
+// Result: file4 //
+// Result: Connected bump2d2.outNormal to mia_material_x_passes2.standard_bump. //
+// Result: createRenderNodeWindow //
+// Result: file4 //
+setFilterScript "initialShadingGroup";
+// Result: 0 //
+setFilterScript "initialParticleSE";
+// Result: 0 //
+setFilterScript "defaultLightSet";
+// Result: 1 //
+setFilterScript "defaultObjectSet";
+// Result: 1 //
+setFilterScript "bridge_far_right_5_main:defaultMat";
+// Result: 0 //
+setFilterScript "bridge_far_right_2_pillar:defaultMat";
+// Result: 0 //
+setFilterScript "bridge_far_right_2_main:defaultMat";
+// Result: 0 //
+setFilterScript "bridge_far_right_4_pillar2:defaultMat";
+// Result: 0 //
+setFilterScript "bridge_far_right_3_main:defaultMat";
+// Result: 0 //
+setFilterScript "bridge_far_right_4_pillar1:defaultMat";
+// Result: 0 //
+setFilterScript "bridge_far_right_3_pillar:defaultMat";
+// Result: 0 //
+setFilterScript "bridge_far_right_4_main:defaultMat";
+// Result: 0 //
+setFilterScript "mia_material_x_passes1SG";
+// Result: 0 //
+setFilterScript "mia_material_x_passes1SG1";
+// Result: 0 //
+setFilterScript "mia_material_x_passes2SG";
+// Result: 0 //
+setFilterScript "mia_material_x_passes2SG1";
+// Result: 0 //
+refreshAE;
+listConnections -source true -destination false "mia_material_x_passes2.diffuse";
+// Result: file3 //
+listConnections -source true -destination false "mia_material_x_passes2.standard_bump";
+// Result: bump2d2 //
+autoUpdateAttrEd;
+listConnections -source true -destination false "bump2d2.bumpValue";
+// Result: file4 //
+listConnections -source true -destination false "bump2d2.outNormal";
+exists AEbump2dTemplate;
+// Result: 1 //
+AEbump2dTemplate "bump2d2";
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+columnLayout -adj true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdbump2dFormLayout|columnLayout65 //
+AEswatchDisplayNew bump2d2( "bump2d2.message" );
+scrollLayout -hst 0 -cr true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdbump2dFormLayout|scrollLayout6 //
+columnLayout -adj true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdbump2dFormLayout|scrollLayout6|columnLayout66 //
+frameLayout -collapsable true -label "2d Bump Attributes" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdbump2dFormLayout|scrollLayout6|columnLayout66|frameLayout50 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdbump2dFormLayout|scrollLayout6|columnLayout66|frameLayout50|columnLayout67 //
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+AEnewFloat "bump2d2.bumpValue" "Bump Value" "" ;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdbump2dFormLayout|scrollLayout6|columnLayout66|frameLayout50|columnLayout67|attrFieldSliderGrp23 //
+AEnewFloat "bump2d2.bumpDepth" "Bump Depth" "" ;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdbump2dFormLayout|scrollLayout6|columnLayout66|frameLayout50|columnLayout67|attrFieldSliderGrp24 //
+AEnewEnum "bump2d2.bumpInterp" "Use As:" "" {"0","Bump", "1","Tangent Space Normals", "2","Object Space Normals"};
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdbump2dFormLayout|scrollLayout6|columnLayout66|frameLayout50|columnLayout67|attrEnumOptionMenuGrp3 //
+setParent ..; setParent ..;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdbump2dFormLayout|scrollLayout6|columnLayout66 //
+setUITemplate -ppt;
+// Result: attributeEditorTemplate //
+frameLayout -collapsable true -label "Effects" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdbump2dFormLayout|scrollLayout6|columnLayout66|frameLayout51 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdbump2dFormLayout|scrollLayout6|columnLayout66|frameLayout51|columnLayout68 //
+frameLayout -collapsable true -label "Node Behavior" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdbump2dFormLayout|scrollLayout6|columnLayout66|frameLayout52 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdbump2dFormLayout|scrollLayout6|columnLayout66|frameLayout52|columnLayout69 //
+frameLayout -collapsable true -label "Extra Attributes" -collapse true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdbump2dFormLayout|scrollLayout6|columnLayout66|frameLayout53 //
+columnLayout -adjustableColumn true;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdbump2dFormLayout|scrollLayout6|columnLayout66|frameLayout53|columnLayout70 //
+setParent ..; setParent ..;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdbump2dFormLayout //
+setUITemplate -ppt;
+// Result: NONE //
+defaultNavigation -dtv -d mia_material_x_passes2.standard_bump;
+// Result: file4 //
+updateAnimLayerEditor("AnimLayerTab");
+statusLineUpdateInputField;
+vrayUpdateAE;
+refreshAssignNewMaterialTreeLister "";
+vrayUpdateAEJob;
+setAttr "bump2d2.bumpInterp" 1;
+vrayUpdateAE;
+AEbuildControls;
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+setParent MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|columnLayout49;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|columnLayout49 //
+AEswatchDisplayReplace file3( "file4.message" );
+AEreplaceEnum "MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout41|columnLayout51|attrEnumOptionMenuGrp2" "file4.filterType" "checkFilterType" ;
+AEreplaceBoolean "MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout41|columnLayout51|formLayout58" "file4.preFilter" "checkPreFilter" 1;
+AEreplaceFloat "MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout41|columnLayout51|attrFieldSliderGrp20" "file4.preFilterRadius" "" ;
+setParent MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout41|columnLayout51|columnLayout52;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout41|columnLayout51|columnLayout52 //
+AEfileTextureNameReplace( "file4.fileTextureName" );
+setParent MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout41|columnLayout51|columnLayout53;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout41|columnLayout51|columnLayout53 //
+AEfileTextureReloadReplace( "file4.fileTextureName" );
+setParent MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout41|columnLayout51|columnLayout54;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout41|columnLayout51|columnLayout54 //
+AEcolorProfileReplace( "file4.colorProfile" );
+AEreplaceBoolean "MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout41|columnLayout51|formLayout59" "file4.useCache" "" 1;
+AEreplaceBoolean "MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout41|columnLayout51|formLayout60" "file4.disableFileLoad" "" 1;
+AEreplaceBoolean "MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout41|columnLayout51|formLayout61" "file4.useFrameExtension" "checkUseFrameExtension" 1;
+AEreplaceInt "MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout41|columnLayout51|attrFieldSliderGrp21" "file4.frameExtension" "" ;
+AEreplaceInt "MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout41|columnLayout51|attrFieldSliderGrp22" "file4.frameOffset" "" ;
+setParent MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout48|columnLayout61;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout48|columnLayout61 //
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+AEnewBooleanGroup { "file4.miOverrideConvertToOptim" } { "Override Global Auto-Conversion Settings" } { "checkAutoConvert" } 1;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout48|columnLayout61|formLayout63 //
+setUITemplate -ppt;
+// Result: attributeEditorTemplate //
+setParent MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout48|columnLayout61;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout48|columnLayout61 //
+setUITemplate -pst attributeEditorTemplate;
+// Result: attributeEditorTemplate //
+AEnewBooleanGroup { "file4.miConvertToOptim" } { "Convert File To Optimized Format" } { "" } 1;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout48|columnLayout61|formLayout64 //
+setUITemplate -ppt;
+// Result: attributeEditorTemplate //
+setUITemplate -ppt;
+// Result: NONE //
+if (`objExists "file4"`) checkFilterType "file4";
+if (`objExists "file4"`) checkPreFilter "file4";
+attrFieldSliderGrp -e -en false attrFieldSliderGrp20;
+// Result: attrFieldSliderGrp20 //
+if (`objExists "file4"`) checkUseFrameExtension "file4";
+attrFieldSliderGrp -e -en false attrFieldSliderGrp21;
+// Result: attrFieldSliderGrp21 //
+attrFieldSliderGrp -e -en false attrFieldSliderGrp22;
+// Result: attrFieldSliderGrp22 //
+if (`objExists "file4"`) checkUseHardwareTextureCycling "file4";
+if (`objExists "file4"`) checkHDRMapping "file4";
+if (`objExists "file4"`) checkAutoConvert "file4";
+setParent formLayout64;
+// Result: MayaWindow|MainAttributeEditorLayout|formLayout2|AEmenuBarLayout|AErootLayout|AErootLayoutPane|AEbaseFormLayout|AEcontrolFormLayout|AttrEdfileFormLayout|scrollLayout5|columnLayout50|frameLayout48|columnLayout61|formLayout64 //
+checkBoxGrp -e -en1 false valueFld;
+// Result: valueFld //
+vrayUpdateAEJob;
+setAttr "file4.filterType" 0;
+checkFilterType "file4";
+AEfileTextureBrowser "AEassignTextureCB  file4.fileTextureName";
+(u"").replace("\\","/");
+# Result:  #
+np_getPrimaryProjectFileRules 0;
+// Result: Scenes scene scenes Templates templates assets Images images images Source Images sourceImages sourceimages Render Data renderData  Particles particles particles Clips clips clips Sound sound  Scripts scripts  Disk Cache diskCache data Movies movie data Translator Data translatorData  AutoSave autoSave autosave //
+(u"E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_far_right_group/export/bridge_far_right_2_main-TM_u0_v0.tif").replace("\\","/");
+# Result: E:/proj/thesis/02_shots/shot03/3d/zbrush/bridge_far_right_group/export/bridge_far_right_2_main-TM_u0_v0.tif #
+optionVar -q maxImageSizeForSwatchGen;
+// Result: 2000 //

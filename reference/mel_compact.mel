@@ -1,0 +1,118 @@
+select -r bridge_far_right_3_pillar:ZBrush_defualt_group ;
+assignCreatedShader "mia_material_x_passes" "" mia_material_x_passes3 "bridge_far_right_3_pillar:ZBrush_defualt_group";
+connectAttr -f mia_material_x_passes3.message mia_material_x_passes3SG.miPhotonShader;
+connectAttr -f mia_material_x_passes3.message mia_material_x_passes3SG.miShadowShader;
+connectAttr -f mia_material_x_passes3.message mia_material_x_passes3SG.miMaterialShader;
+// Result: Connected mia_material_x_passes3.message to mia_material_x_passes3SG.miMaterialShader. //
+sets -e -forceElement mia_material_x_passes3SG;
+// Result: mia_material_x_passes3SG //
+// Created shader mia_material_x_passes and assigned to the selected objects. //
+sets -renderable true -noSurfaceShader true -empty -name mia_material_x_passes3SG;
+// Result: mia_material_x_passes3SG1 //
+connectAttr mia_material_x_passes3.message mia_material_x_passes3SG1.miMaterialShader;
+// Result: Connected mia_material_x_passes3.message to mia_material_x_passes3SG1.miMaterialShader. //
+connectAttr mia_material_x_passes3.message mia_material_x_passes3SG1.miPhotonShader;
+// Result: Connected mia_material_x_passes3.message to mia_material_x_passes3SG1.miPhotonShader. //
+connectAttr mia_material_x_passes3.message mia_material_x_passes3SG1.miShadowShader;
+// Result: Connected mia_material_x_passes3.message to mia_material_x_passes3SG1.miShadowShader. //
+defaultNavigation -createNew -destination "mia_material_x_passes3.diffuse";
+createRenderNode -allWithTexturesUp "defaultNavigation -force true -connectToExisting -source %node -destination mia_material_x_passes3.diffuse" "";
+defaultNavigation -defaultTraversal -destination "mia_material_x_passes3.diffuse";
+shadingNode -asTexture file;
+// Result: file5 //
+shadingNode -asUtility place2dTexture;
+// Result: place2dTexture5 //
+connectAttr -f place2dTexture5.coverage file5.coverage;
+// Result: Connected place2dTexture5.coverage to file5.coverage. //
+connectAttr -f place2dTexture5.translateFrame file5.translateFrame;
+// Result: Connected place2dTexture5.translateFrame to file5.translateFrame. //
+connectAttr -f place2dTexture5.rotateFrame file5.rotateFrame;
+// Result: Connected place2dTexture5.rotateFrame to file5.rotateFrame. //
+connectAttr -f place2dTexture5.mirrorU file5.mirrorU;
+// Result: Connected place2dTexture5.mirrorU to file5.mirrorU. //
+connectAttr -f place2dTexture5.mirrorV file5.mirrorV;
+// Result: Connected place2dTexture5.mirrorV to file5.mirrorV. //
+connectAttr -f place2dTexture5.stagger file5.stagger;
+// Result: Connected place2dTexture5.stagger to file5.stagger. //
+connectAttr -f place2dTexture5.wrapU file5.wrapU;
+// Result: Connected place2dTexture5.wrapU to file5.wrapU. //
+connectAttr -f place2dTexture5.wrapV file5.wrapV;
+// Result: Connected place2dTexture5.wrapV to file5.wrapV. //
+connectAttr -f place2dTexture5.repeatUV file5.repeatUV;
+// Result: Connected place2dTexture5.repeatUV to file5.repeatUV. //
+connectAttr -f place2dTexture5.offset file5.offset;
+// Result: Connected place2dTexture5.offset to file5.offset. //
+connectAttr -f place2dTexture5.rotateUV file5.rotateUV;
+// Result: Connected place2dTexture5.rotateUV to file5.rotateUV. //
+connectAttr -f place2dTexture5.noiseUV file5.noiseUV;
+// Result: Connected place2dTexture5.noiseUV to file5.noiseUV. //
+connectAttr -f place2dTexture5.vertexUvOne file5.vertexUvOne;
+// Result: Connected place2dTexture5.vertexUvOne to file5.vertexUvOne. //
+connectAttr -f place2dTexture5.vertexUvTwo file5.vertexUvTwo;
+// Result: Connected place2dTexture5.vertexUvTwo to file5.vertexUvTwo. //
+connectAttr -f place2dTexture5.vertexUvThree file5.vertexUvThree;
+// Result: Connected place2dTexture5.vertexUvThree to file5.vertexUvThree. //
+connectAttr -f place2dTexture5.vertexCameraOne file5.vertexCameraOne;
+// Result: Connected place2dTexture5.vertexCameraOne to file5.vertexCameraOne. //
+connectAttr place2dTexture5.outUV file5.uv;
+// Result: Connected place2dTexture5.outUV to file5.uvCoord. //
+connectAttr place2dTexture5.outUvFilterSize file5.uvFilterSize;
+// Result: Connected place2dTexture5.outUvFilterSize to file5.uvFilterSize. //
+defaultNavigation -force true -connectToExisting -source file5 -destination mia_material_x_passes3.diffuse; window -e -vis false createRenderNodeWindow;
+connectAttr -f file5.outColor mia_material_x_passes3.diffuse;
+// Result: Connected file5.outColor to mia_material_x_passes3.diffuse. //
+connectAttr -f file5.outAlpha mia_material_x_passes3.diffuseA;
+// Result: Connected file5.outAlpha to mia_material_x_passes3.diffuseA. //
+// Result: createRenderNodeWindow //
+setAttr "file5.filterType" 0;
+defaultNavigation -createNew -destination "mia_material_x_passes3.standard_bump";
+createRenderNode -allWithTexturesUp "defaultNavigation -force true -connectToExisting -source %node -destination mia_material_x_passes3.standard_bump" "";
+defaultNavigation -defaultTraversal -destination "mia_material_x_passes3.standard_bump";
+shadingNode -asTexture file;
+// Result: file6 //
+shadingNode -asUtility place2dTexture;
+// Result: place2dTexture6 //
+connectAttr -f place2dTexture6.coverage file6.coverage;
+// Result: Connected place2dTexture6.coverage to file6.coverage. //
+connectAttr -f place2dTexture6.translateFrame file6.translateFrame;
+// Result: Connected place2dTexture6.translateFrame to file6.translateFrame. //
+connectAttr -f place2dTexture6.rotateFrame file6.rotateFrame;
+// Result: Connected place2dTexture6.rotateFrame to file6.rotateFrame. //
+connectAttr -f place2dTexture6.mirrorU file6.mirrorU;
+// Result: Connected place2dTexture6.mirrorU to file6.mirrorU. //
+connectAttr -f place2dTexture6.mirrorV file6.mirrorV;
+// Result: Connected place2dTexture6.mirrorV to file6.mirrorV. //
+connectAttr -f place2dTexture6.stagger file6.stagger;
+// Result: Connected place2dTexture6.stagger to file6.stagger. //
+connectAttr -f place2dTexture6.wrapU file6.wrapU;
+// Result: Connected place2dTexture6.wrapU to file6.wrapU. //
+connectAttr -f place2dTexture6.wrapV file6.wrapV;
+// Result: Connected place2dTexture6.wrapV to file6.wrapV. //
+connectAttr -f place2dTexture6.repeatUV file6.repeatUV;
+// Result: Connected place2dTexture6.repeatUV to file6.repeatUV. //
+connectAttr -f place2dTexture6.offset file6.offset;
+// Result: Connected place2dTexture6.offset to file6.offset. //
+connectAttr -f place2dTexture6.rotateUV file6.rotateUV;
+// Result: Connected place2dTexture6.rotateUV to file6.rotateUV. //
+connectAttr -f place2dTexture6.noiseUV file6.noiseUV;
+// Result: Connected place2dTexture6.noiseUV to file6.noiseUV. //
+connectAttr -f place2dTexture6.vertexUvOne file6.vertexUvOne;
+// Result: Connected place2dTexture6.vertexUvOne to file6.vertexUvOne. //
+connectAttr -f place2dTexture6.vertexUvTwo file6.vertexUvTwo;
+// Result: Connected place2dTexture6.vertexUvTwo to file6.vertexUvTwo. //
+connectAttr -f place2dTexture6.vertexUvThree file6.vertexUvThree;
+// Result: Connected place2dTexture6.vertexUvThree to file6.vertexUvThree. //
+connectAttr -f place2dTexture6.vertexCameraOne file6.vertexCameraOne;
+// Result: Connected place2dTexture6.vertexCameraOne to file6.vertexCameraOne. //
+connectAttr place2dTexture6.outUV file6.uv;
+// Result: Connected place2dTexture6.outUV to file6.uvCoord. //
+connectAttr place2dTexture6.outUvFilterSize file6.uvFilterSize;
+// Result: Connected place2dTexture6.outUvFilterSize to file6.uvFilterSize. //
+defaultNavigation -force true -connectToExisting -source file6 -destination mia_material_x_passes3.standard_bump; window -e -vis false createRenderNodeWindow;
+setAttr file6.alphaIsLuminance true;
+connectAttr -f file6.outAlpha bump2d3.bumpValue;
+// Result: Connected file6.outAlpha to bump2d3.bumpValue. //
+connectAttr -f bump2d3.outNormal mia_material_x_passes3.standard_bump;
+// Result: Connected bump2d3.outNormal to mia_material_x_passes3.standard_bump. //
+// Result: createRenderNodeWindow //
+setAttr "bump2d3.bumpInterp" 1;
